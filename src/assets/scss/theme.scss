@@ -1,0 +1,60 @@
+
+/* FONTS */
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("../fonts/OpenSans-Light.ttf");
+  }
+  @font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../fonts/OpenSans-Bold.ttf");
+  }
+  @font-face {
+    font-family: "OpenSans-Regular";
+    src: url("../fonts/OpenSans-Regular.ttf");
+  }
+  @font-face {
+    font-family: "OpenSans-ExtraBold";
+    src: url("../fonts/OpenSans-ExtraBold.ttf");
+  }
+  @font-face {
+    font-family: "OpenSans-ExtraBoldItalic";
+    src: url("../fonts/OpenSans-ExtraBoldItalic.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-Light";
+    src: url("../fonts/Roboto-Light.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-Bold";
+    src: url("../fonts/Roboto-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-BlackItalic";
+    src: url("../fonts/Roboto-BlackItalic.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-Black";
+    src: url("../fonts/Roboto-Black.ttf");
+  
+  }
+  
+  // BUTTONS
+  .btn-red-repcex{
+    border-radius: 10px;
+    font-family: 'Roboto-BlackItalic';
+    color:white;
+    margin:0px 5px;
+}
+.btn-white-outline-repcex{
+    border-radius: 10px;
+    font-family: 'Roboto-Regular';
+    color:white;
+    border:2px solid white;
+    background: transparent;
+    margin:0px 5px;
+}
+

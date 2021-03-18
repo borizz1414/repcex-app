@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+@import '~src/assets/scss/theme.scss';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$repcex-app-primary: mat-palette($mat-red, A700);
+$repcex-app-accent: mat-palette($mat-red, 900);
+
+// The warn palette is optional (defaults to red).
+$repcex-app-warn: mat-palette($mat-red,50);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$repcex-app-theme: mat-light-theme((
+  color: (
+    primary: $repcex-app-primary,
+    accent: $repcex-app-accent,
+    warn: $repcex-app-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($repcex-app-theme);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body { height: 100%; font-family: 'Roboto-Regular' !important;}
+.row{
+    margin: 0;
+}
+/* FLEXBOX CLASS */
+.d-flex {
+    display: flex;
+  }
+  .j-content-center {
+    justify-content: center;
+  }
+  .j-content-fs {
+    justify-content: flex-start;
+  }
+  .j-content-fe {
+    justify-content: flex-end;
+  }
+  .j-content-sa {
+    justify-content: space-around;
+  }
+  .j-content-sb {
+    justify-content: space-between;
+  }
+  .j-content-se {
+    justify-content: space-evenly;
+  }
+  .a-items-center {
+    align-items: center;
+  }
+  .a-items-fs {
+    align-items: flex-start;
+  }
+  .a-items-fe {
+    align-items: flex-end;
+  }
+  .f-direction-c{
+    flex-direction: column;
+  }
+  .f-direction-r{
+    flex-direction: row;
+  }
+  .text-a-center{
+  text-align: center;
+  }
+  .text-a-right{
+  text-align: right;
+  }
+  .text-a-left{
+  text-align: left;
+  }
+  .text-a-justify{
+  text-align: justify;
+  }
+  .flex-wrap-wrap{
+    flex-wrap: wrap;
+  }
+
+
+

@@ -1,0 +1,22 @@
+.container-order{
+    height: 100vh;
+    background: url("../../../../assets/img/bg/background.svg");
+    background-size: cover;
+}
+
+// HEADER
+.header{
+    height: 140px;
+    display: flex;
+
+}
+.section-banner{
+    height: 400px;
+}
+.text-banner{
+    h1{
+        color:white;
+        font-size: 40px;
+        font: italic normal 300 59px/71px 'Roboto-Light';
+    }
+}
