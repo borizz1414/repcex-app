@@ -33,8 +33,8 @@
 }
 
 .card-order{
-    width: 70%;
-    margin-left: 80px;
+    width: 86%;
+    margin-left: 16px;
     border-radius: 10px;
     color:$black;
     background:white;
@@ -55,6 +55,11 @@
     background: white;
     padding: 8px;
     border-radius: 10px;
+    margin-left: 5px;
+}
+.col-price-card{
+    padding: 0;
+    justify-content: space-between;
 }
 .selection-products-card{
     padding: 10px;
@@ -72,4 +77,26 @@
 .min,.value-qty,.plus{
     padding: 15px 10px;
     background: white;
+}
+.min{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.plus{
+    border-radius: 0px 10px 10px 0px;
+}
+.price-product{
+    b{
+        font-family: 'OpenSans-Bold';
+        font-size: 18px;
+    }
+}
+.btn-make-order{
+    width: 100%;
+    padding: 6px 0px;
+    margin: 0 !important;
+}
+.btn-order{
+    background: $red;
+    border-radius: 10px 10px 0px 0px;
 }
