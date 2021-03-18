@@ -34,7 +34,7 @@
 
 .card-order{
     width: 86%;
-    margin-left: 16px;
+    margin-left: 5px;
     border-radius: 10px;
     color:$black;
     background:white;
@@ -99,4 +99,16 @@
 .btn-order{
     background: $red;
     border-radius: 10px 10px 0px 0px;
+}
+.subtitle-container-banner{
+    margin: 10px 0px;
+}
+.subtitle-banner{
+    span{
+        color:white;
+        margin-left: 10px;
+        h2{
+            font-size: 16px;
+        }
+    }
 }
