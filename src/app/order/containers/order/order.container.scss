@@ -1,3 +1,4 @@
+@import "~src/assets/scss/vars.scss";
 .container-order{
     height: 100vh;
     background: url("../../../../assets/img/bg/background.svg");
@@ -19,4 +20,56 @@
         font-size: 40px;
         font: italic normal 300 59px/71px 'Roboto-Light';
     }
+}
+.header-card{
+    text-align: center;
+    padding: 30px;
+    h1{
+        font: italic normal 300 26px 'Roboto-Light';
+    }
+    p{
+        font-family: 'OpenSans-Regular';
+    }
+}
+
+.card-order{
+    width: 70%;
+    margin-left: 80px;
+    border-radius: 10px;
+    color:$black;
+    background:white;
+
+}
+.form-order-card{
+    background: #EDF1FA;
+}
+.order-input{
+    padding: 10px 20px;
+    label{
+        margin: 5px 0px;
+        font-family: 'OpenSans-Regular';
+    }
+}
+.photo-product{
+    width: 46px;
+    background: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+.selection-products-card{
+    padding: 10px;
+}
+.description-product{
+    b{
+        font-family: 'OpenSans-ExtraBoldItalic';
+        font-size: 16px;
+    }
+
+}
+.qty-products{
+    height: 100%;
+}
+.min,.value-qty,.plus{
+    padding: 15px 10px;
+    background: white;
 }

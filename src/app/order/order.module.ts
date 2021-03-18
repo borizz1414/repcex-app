@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { CardOrderComponent } from './components/card-order/card-order.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { MaterialModule } from '../material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { MaterialModule } from '../material/material.module';
   imports: [
     CommonModule,
     OrderRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class OrderModule { }
