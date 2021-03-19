@@ -1,1 +1,120 @@
-<p>card-order works!</p>
+<div class="container-card-order">
+    <div class="card-order">
+        <div class="header-card">
+            <h1>¡Pide ya tu <b>REPCEX!</b></h1>
+            <p>Completa los datos a continuación y haz tu pedido ahora mismo.</p>
+        </div>
+<ng-container *ngIf="content_card === 'informacion'"> 
+        <div class="form-information-card">
+            <form action="">
+                <div class="order-input">
+                    <label for="">Nombre</label><br>
+                    <input type="text" class="input-order-repcex" placeholder="Ingresa tu nombre completo">
+                </div>
+                <div class="order-input">
+                    <label for="">Teléfono</label><br>
+                    <input type="tel" class="input-order-repcex" placeholder="Ingresa tu número de teléfono">
+                </div>
+                <div class="order-input">
+                    <label for="">Email</label><br>
+                    <input type="email" class="input-order-repcex" placeholder="Ingresa tu email">
+                </div>
+                <br>
+                <br>
+                <div class="btn-order">
+                    <button mat-raised-button color="accent" class="btn-red-repcex btn-make-order">CONTINUAR</button>
+
+                </div>
+
+            </form>
+        
+               
+        </div>
+    </ng-container>
+        <ng-container *ngIf="content_card === 'pedido'"> 
+        <div class="form-order-card">
+            <form action="">
+                <div class="order-input">
+                    <label for="">Ciudad</label><br>
+                    <input type="text" class="input-order-repcex" placeholder="Ingresa la ciudad donde estés">
+                </div>
+                <div class="order-input">
+                    <label for="">Dirección de entrega</label><br>
+                    <input type="text" class="input-order-repcex" placeholder="Ingresa la dirección de entrega del producto">
+                </div>
+                <div class="selection-products-card item-product">
+                    <div class="row">
+                        <div class="col-xs-2  d-flex j-content-fe">
+                            <div class="photo-product">
+                                <img width="100%" src="assets/img/bg/producto-azul.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xs-3 description-product">
+                            <b>REPCEX</b>
+                            <p>Presentación 60ml</p>
+                        </div>
+                        <div class="col-xs-7 d-flex j-content-sb">
+                            <div class="price-product d-flex a-items-center">
+                                <b>$30.000</b>
+                            </div>
+                            <div class="qty-products d-flex a-items-center">
+                                <div class="min">
+                                    <i class="fas fa-minus"></i>
+                                </div>
+                                <div class="value-qty">
+                                    1
+                                </div>
+                                <div class="plus">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selection-products-card item-product">
+                    <div class="row">
+                        <div class="col-xs-2  d-flex j-content-fe">
+                            <div class="photo-product">
+                                <img width="100%" src="assets/img/bg/producto-azul.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xs-3 description-product">
+                            <b>REPCEX</b>
+                            <p>Presentación 500ml</p>
+                        </div>
+                        <div class="col-xs-7 d-flex j-content-sb">
+                            <div class="price-product d-flex a-items-center">
+                                <b>$50.000</b>
+                            </div>
+                            <div class="qty-products d-flex a-items-center">
+                                <div class="min">
+                                    <i class="fas fa-minus"></i>
+                                </div>
+                                <div class="value-qty">
+                                    1
+                                </div>
+                                <div class="plus">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>Elige el distribuidor</p>
+                    </div>
+                </div>
+               
+                <div class="btn-order">
+                    <button mat-raised-button color="accent" class="btn-red-repcex btn-make-order">REALIZAR PEDIDO</button>
+
+                </div>
+
+            </form>
+        
+               
+        </div> 
+    </ng-container>
+    </div>
+</div>

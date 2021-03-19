@@ -1,0 +1,26 @@
+.section-banner{
+    height: 400px;
+}
+.text-banner{
+    h1{
+        color:white;
+        font-size: 40px;
+        font: italic normal 300 40px/60px 'Roboto-Light';
+        b{
+            font: italic normal 300 40px/60px 'Roboto-BlackItalic'; 
+        }
+    }
+}
+.subtitle-container-banner{
+    margin: 10px 0px;
+}
+.subtitle-banner{
+    span{
+        color:white;
+        margin-left: 10px;
+        h2{
+            font-size: 16px;
+            font-family: 'OpenSans-Light';
+        }
+    }
+}
