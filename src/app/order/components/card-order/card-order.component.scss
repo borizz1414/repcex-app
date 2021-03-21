@@ -106,3 +106,20 @@
     }
     
 }
+
+.navigation-tags{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 12px;
+    i{
+        color:#9E9E9E;
+    }
+    a{
+        color:$black;
+        text-decoration: none;
+    }
+}
+.tag-selected{
+    color:$blue !important;
+    font-family: 'OpenSans-Bold';
+}

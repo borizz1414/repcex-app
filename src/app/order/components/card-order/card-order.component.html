@@ -10,7 +10,7 @@
                 <mat-expansion-panel class="expansion-panel-order" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
                     <mat-expansion-panel-header>
                         <mat-panel-title>
-                            <i class="fas fa-shopping-cart"></i> {{panelOpenState ? 'Mostrar' : 'Ocultar'}} resumen del pedido
+                            <i class="fas fa-shopping-cart"></i> {{panelOpenState ? 'Ocultar' : 'Mostrar'}} resumen del pedido
                         </mat-panel-title>
                         <mat-panel-description>
                             <!-- Currently I am {{panelOpenState ? 'open' : 'closed'}} -->
@@ -69,6 +69,25 @@
                     </div>
                 </mat-expansion-panel>
                 </mat-accordion>
+                <div class="navigation-tags">
+                    <div class="nav-menu-card">
+                        <a routerLink="/pedido" routerLinkActive="tag-selected">
+                            Pedido
+                        </a>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                    <div class="nav-menu-card">
+                        <a routerLink="/informacion" routerLinkActive="tag-selected">
+                            Información
+                        </a>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                    <div class="nav-menu-card">
+                        <a routerLink="/pago" routerLinkActive="tag-selected">
+                            Pago
+                        </a>
+                    </div>
+                </div>
                 <form action="">
                     <div class="order-input">
                         <label for="">Nombre</label><br>

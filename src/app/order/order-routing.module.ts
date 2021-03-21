@@ -5,7 +5,7 @@ import { OrderContainer } from './containers/order/order.container';
 
 const routes: Routes = [
   {
-    path:'',
+    path:'pedido',
     component:OrderContainer
   },
   {
