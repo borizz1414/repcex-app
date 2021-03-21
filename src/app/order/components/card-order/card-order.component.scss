@@ -17,8 +17,12 @@
     color:$black;
     background:white;
     border-radius: 10px;
-    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 544px;
 
+}
+.card-order::-webkit-scrollbar {
+    display: none;
 }
 .form-information-card{
     background: #ffffff;
@@ -82,4 +86,23 @@
 .btn-order{
     background: $red;
     border-radius: 10px 10px 0px 0px;
+}
+/* INFORMACION */
+.expansion-panel-order{
+    box-shadow: 0px 0px; 
+    border:0px;
+    background: #F2F2F2;
+    border-top:1px solid rgb(220, 220, 220);
+    border-bottom:1px solid rgb(220, 220, 220);
+    mat-expansion-panel-header{
+        mat-panel-title{
+            color:#000C6E;
+            i{
+                font-size: 22px;
+                margin-right: 10px;
+            }
+            
+        }
+    }
+    
 }
