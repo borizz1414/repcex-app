@@ -12,11 +12,13 @@ import { MaterialModule } from '../material/material.module';
 import { RecoveryPasswordContainer } from './containers/recovery-password/recovery-password.container';
 import { CardRegisterComponent } from './components/card-register/card-register.component';
 import { CardRecoveryPasswordComponent } from './components/card-recovery-password/card-recovery-password.component';
+import { AdminLoginContainer } from './containers/admin-login/admin-login.container';
+import { CardAdminLoginComponent } from './components/card-admin-login/card-admin-login.component';
 
 
 
 @NgModule({
-  declarations: [LoginContainer,RegisterContainer, BannerLoginComponent, CardLoginComponent, RecoveryPasswordContainer, CardRegisterComponent, CardRecoveryPasswordComponent],
+  declarations: [LoginContainer,RegisterContainer, BannerLoginComponent, CardLoginComponent, RecoveryPasswordContainer, CardRegisterComponent, CardRecoveryPasswordComponent, AdminLoginContainer, CardAdminLoginComponent],
   exports:[BannerLoginComponent],
   imports: [
     CommonModule,
