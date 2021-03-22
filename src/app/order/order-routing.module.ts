@@ -6,7 +6,7 @@ import { OrderContainer } from './containers/order/order.container';
 
 const routes: Routes = [
   {
-    path:'pedido',
+    path:'',
     component:OrderContainer
   },
   {
@@ -14,7 +14,7 @@ const routes: Routes = [
     component:InformationOrderContainer
   },
   {
-    path:'pedido-distribuidor',
+    path:'distribuidor',
     component:DistributorContainer
   },
 ];

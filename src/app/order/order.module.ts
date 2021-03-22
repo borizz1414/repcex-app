@@ -19,6 +19,7 @@ import { DistributorContainer } from './containers/distributor/distributor.conta
 
 @NgModule({
   declarations: [OrderContainer, HeaderComponent, CardOrderComponent, BannerComponent, InformationOrderContainer, HeaderCardComponent, InformationOrderComponent, DistributorOrderComponent, ClientOrderComponent, DistributorContainer ],
+  exports:[HeaderComponent,BannerComponent],
   imports: [
     CommonModule,
     OrderRoutingModule,

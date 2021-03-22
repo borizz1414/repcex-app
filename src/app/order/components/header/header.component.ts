@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   @Input() distributor : Boolean;
+  @Input()btn : Boolean;
   constructor(public router : Router) { }
 
   ngOnInit(): void {
@@ -15,7 +16,7 @@ export class HeaderComponent implements OnInit {
   switchUser(){
     let url = '/pedido'
     console.log(this.distributor)
-    !this.distributor ? url= '/pedido' : url = '/pedido-distribuidor';
+    !this.distributor ? url= '/pedido' : url = '/pedido/distribuidor';
     this.router.navigate([url]);
   }
 
