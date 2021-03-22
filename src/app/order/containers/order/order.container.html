@@ -1,5 +1,5 @@
 <div class="container-order">
- <app-header></app-header>
+ <app-header [distributor]="true"></app-header>
     <div class="row section-banner">
         <div class="col-xs-offset-1 col-xs-3 ">
         <app-banner></app-banner>
@@ -9,7 +9,7 @@
             <img height="75%" src="assets/img/bg/producto-azul.png" alt="">
         </div>
         <div class="col-xs-4 container-content-card">
-           <app-card-order content_card="pedido"></app-card-order>
+           <app-card-order content_card="pedido" type="client"></app-card-order>
         </div>
     </div>
 </div>

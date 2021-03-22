@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InformationOrderContainer } from './containers/information-order/information-order.container';
+import { DistributorContainer } from './containers/distributor/distributor.container';
+import { InformationOrderContainer } from './containers/information/information-order.container';
 import { OrderContainer } from './containers/order/order.container';
 
 const routes: Routes = [
@@ -11,7 +12,11 @@ const routes: Routes = [
   {
     path:'informacion',
     component:InformationOrderContainer
-  }
+  },
+  {
+    path:'pedido-distribuidor',
+    component:DistributorContainer
+  },
 ];
 
 @NgModule({

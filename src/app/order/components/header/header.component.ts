@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  @Input() distributor : Boolean;
+  constructor(public router : Router) { }
 
   ngOnInit(): void {
+  }
+  switchUser(){
+    let url = '/pedido'
+    console.log(this.distributor)
+    !this.distributor ? url= '/pedido' : url = '/pedido-distribuidor';
+    this.router.navigate([url]);
   }
 
 }

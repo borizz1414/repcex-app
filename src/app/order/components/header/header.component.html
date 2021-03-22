@@ -3,7 +3,7 @@
         <img src="assets/img/logo/logo.svg" alt="">
     </div>
     <div class="col-xs-offset-4 col-xs-3 d-flex a-items-center">
-        <button mat-raised-button color="accent" class="btn-red-repcex">SOY DISTRIBUIDOR</button>
+        <button mat-raised-button color="accent" class="btn-red-repcex" (click)="switchUser()">SOY {{distributor ? 'DISTRIBUIDOR' : 'CLIENTE'}}</button>
         <button mat-raised-button  class="btn-white-outline-repcex">MI CUENTA</button>
     </div>
 </div>

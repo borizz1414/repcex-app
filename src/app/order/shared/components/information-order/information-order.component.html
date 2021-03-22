@@ -1,0 +1,108 @@
+<div class="form-information-card">
+    <mat-accordion>
+    <mat-expansion-panel class="expansion-panel-order" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <i class="fas fa-shopping-cart"></i> {{panelOpenState ? 'Ocultar' : 'Mostrar'}} resumen del pedido
+            </mat-panel-title>
+            <mat-panel-description>
+                <!-- Currently I am {{panelOpenState ? 'open' : 'closed'}} -->
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="product-price-divider d-flex j-content-sb">
+            <p>Producto</p>
+            <p>Precio</p>
+        </div>
+        <mat-divider></mat-divider>
+        <br>
+        <div class="order-product-resume d-flex j-content-sb">
+            <div class="product-resume-card d-flex j-content-se a-items-center">
+                <div class="photo-product">
+                    <img width="100%" src="assets/img/bg/producto-azul.png" alt="">
+                </div>
+                <div class="description-product">
+                    <b>REPCEX</b>
+                    <p>01 Unidades</p>
+                </div>
+            </div>
+            <div class="price-product d-flex a-items-center">
+                <b>$50.000</b>
+            </div>
+
+        </div>
+        <div class="order-product-resume d-flex j-content-sb">
+            <div class="product-resume-card d-flex j-content-se a-items-center">
+                <div class="photo-product">
+                    <img width="100%" src="assets/img/bg/producto-azul.png" alt="">
+                </div>
+                <div class="description-product">
+                    <b>REPCEX</b>
+                    <p>01 Unidades</p>
+                </div>
+            </div>
+            <div class="price-product d-flex a-items-center">
+                <b>$30.000</b>
+            </div>
+
+        </div>
+        <br>
+        <mat-divider></mat-divider>
+        <br>
+        <div class="product-price-divider price-product d-flex j-content-sb">
+            <p>Subtotal</p>
+            <p>$80.000</p>
+        </div>
+        <div class="product-price-divider price-product d-flex j-content-sb">
+            <p>Envio</p>
+            <p>$0.000</p>
+        </div>
+        <div class="product-price-divider price-product d-flex j-content-sb">
+            <b>Total</b>
+            <b>$80.000</b>
+        </div>
+    </mat-expansion-panel>
+    </mat-accordion>
+    <div class="navigation-tags">
+        <div class="nav-menu-card">
+            <a routerLink="/pedido" routerLinkActive="tag-selected">
+                Pedido
+            </a>
+        </div>
+        <i class="fas fa-chevron-right"></i>
+        <div class="nav-menu-card">
+            <a routerLink="/informacion" routerLinkActive="tag-selected">
+                Información
+            </a>
+        </div>
+        <i class="fas fa-chevron-right"></i>
+        <div class="nav-menu-card">
+            <a routerLink="/pago" routerLinkActive="tag-selected">
+                Pago
+            </a>
+        </div>
+    </div>
+    <form action="">
+        <div class="order-input">
+            <label for="">Nombre</label><br>
+            <input type="text" class="input-order-repcex" placeholder="Ingresa tu nombre completo">
+        </div>
+        <div class="order-input">
+            <label for="">Teléfono</label><br>
+            <input type="tel" class="input-order-repcex" placeholder="Ingresa tu número de teléfono">
+        </div>
+        <div class="order-input">
+            <label for="">Email</label><br>
+            <input type="email" class="input-order-repcex" placeholder="Ingresa tu email">
+        </div>
+        <br>
+        <br>
+        <div class="btn-order">
+            <button mat-raised-button color="accent"
+                class="btn-red-repcex btn-make-order">CONTINUAR</button>
+
+        </div>
+
+    </form>
+
+
+</div>
