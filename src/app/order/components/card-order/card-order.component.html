@@ -20,8 +20,8 @@
                     <app-client-order *ngIf="type == 'client'"></app-client-order> 
                     <app-distributor-order *ngIf="type == 'dist'"></app-distributor-order>
                     <div class="btn-order">
-                        <button mat-raised-button color="accent" class="btn-red-repcex btn-make-order">REALIZAR
-                            PEDIDO</button>
+                        <a routerLink="/pedido/informacion"><button mat-raised-button color="accent" class="btn-red-repcex btn-make-order">REALIZAR
+                            PEDIDO</button></a>
 
                     </div>
 

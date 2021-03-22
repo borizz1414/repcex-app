@@ -1,5 +1,8 @@
 @import '../../../order/components/card-order/card-order.component.scss';
 @import '~src/assets/scss/vars.scss';
+a{
+    text-decoration: none;
+}
 .card-order{
     width: 100%;
     max-height: 607px;
@@ -22,6 +25,7 @@
     padding: 10px 20px;}
 
 .forgot-password{
+
     padding: 10px 20px;
     p{  
         font-family: 'OpenSans-Light';
@@ -45,8 +49,12 @@
     }
 }
 .text-register{
-    color:$blue;
+    a{
+
+        color:$blue;
+    }
     font-family: 'OpenSans-Light';
+    color:$blue;
     margin-bottom:40px;
     span{
         font-family: 'OpenSans-Bold';

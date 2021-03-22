@@ -64,19 +64,19 @@
     </mat-accordion>
     <div class="navigation-tags">
         <div class="nav-menu-card">
-            <a routerLink="/pedido" routerLinkActive="tag-selected">
+            <a routerLink="/pedido" >
                 Pedido
             </a>
         </div>
         <i class="fas fa-chevron-right"></i>
         <div class="nav-menu-card">
-            <a routerLink="/informacion" routerLinkActive="tag-selected">
+            <a routerLink="/informacion" class="tag-selected">
                 Información
             </a>
         </div>
         <i class="fas fa-chevron-right"></i>
         <div class="nav-menu-card">
-            <a routerLink="/pago" routerLinkActive="tag-selected">
+            <a routerLink="/pago" >
                 Pago
             </a>
         </div>
@@ -97,8 +97,8 @@
         <br>
         <br>
         <div class="btn-order">
-            <button mat-raised-button color="accent"
-                class="btn-red-repcex btn-make-order">CONTINUAR</button>
+            <a routerLink="/auth/registro"><button mat-raised-button color="accent"
+                class="btn-red-repcex btn-make-order">CONTINUAR</button></a>
 
         </div>
 

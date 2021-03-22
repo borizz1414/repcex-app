@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
   constructor(public router : Router) { }
 
   ngOnInit(): void {
+    this.btn === undefined ? this.btn = true :this.btn
   }
   switchUser(){
     let url = '/pedido'
