@@ -1,12 +1,60 @@
 @import "~src/assets/scss/vars.scss";
 .container-order{
-    height: 100vh;
+    height: max-content;
+    min-height: 100%;
     background: url("../../../../assets/img/bg/background.svg");
     background-size: cover;
+    background-position: center center;
 }
-
 
 
 .container-content-card{
     height: 600px;
 }
+
+.product-img{
+    margin:0px 20px;
+}
+.img-products-left{
+    width: 100%;
+}
+// RESPONSIVE
+@media (min-width:100px){
+    
+    .product-img{
+    height:200px;
+    }
+    }
+@media (min-width:350px){
+    
+.product-img{
+height:300px;
+}
+.container-content-card{
+    justify-content: center;
+}
+}
+
+@media (min-width:1000px){
+    .product-img{
+        height:390px
+        }
+        .container-content-card{
+            justify-content: center;
+        }
+}
+@media (min-width:1440px){
+    .product-img{
+        height:450px
+        }
+        .container-content-card{
+            justify-content: flex-end;
+        }
+}
+@media (min-width:1920px){
+    .product-img{
+        height:100%
+        }
+}
+
+

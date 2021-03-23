@@ -4,3 +4,42 @@
     display: flex;
 
 }
+.fa-bars{
+    font-size: 40px;
+    color:white;
+    display: none;
+}
+// RESPONSIVE
+@media (min-width:350px){
+    .fa-bars{
+        display: block;
+    }
+    .btn-red-repcex,.btn-white-outline-repcex{
+        display: none;
+    }
+}
+    @media (min-width:750px){
+        .fa-bars{
+            display: none;
+        }
+        .btn-red-repcex,.btn-white-outline-repcex{
+            display: block;
+        }
+    }
+    @media (min-width:1440px){
+        .fa-bars{
+            display: none;
+        }
+        .btn-red-repcex,.btn-white-outline-repcex{
+            display: block;
+        }
+    }
+    @media (min-width:1920px){
+        .fa-bars{
+            display: none;
+        }
+        .btn-red-repcex,.btn-white-outline-repcex{
+            display: block;
+        }
+    }
+    

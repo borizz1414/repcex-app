@@ -11,7 +11,7 @@
 }
 
 .card-order{
-    width: 86%;
+    width: 100%;
     margin-left: 5px;
     border-radius: 10px;
     color:$black;
@@ -75,7 +75,8 @@
 .price-product{
     b{
         font-family: 'OpenSans-Bold';
-        font-size: 18px;
+        font-size: 16px;
+        margin-left: 10px;
     }
 }
 .btn-make-order{
@@ -106,6 +107,9 @@
     }
     
 }
+.container-card-order{
+    width: 375px;
+}
 
 .navigation-tags{
     display: flex;
@@ -123,3 +127,47 @@
     color:$blue !important;
     font-family: 'OpenSans-Bold';
 }
+// RESPONSIVE
+@media (min-width:350px){
+    
+    .card-order{
+        max-height: 589px;
+
+    
+    }
+    .container-card-order{
+        width: 97%;
+    }
+    
+}
+    @media (min-width:750px){
+        .card-order{
+            max-height: 589px;
+        
+        }
+        .container-card-order{
+            width: 100%;
+        }
+        
+    }
+    @media (min-width:1440px){
+        .card-order{
+            max-height: 589px;
+        
+        }
+        .container-card-order{
+            width: 340px;
+        }
+        
+    }
+    @media (min-width:1920px){
+        .card-order{
+            max-height: 700px;
+        
+        }
+        .container-card-order{
+            width: 375px;
+        }
+        
+    }
+    

@@ -24,3 +24,46 @@
         }
     }
 }
+@media (min-width:350px){
+    
+    .subtitle-banner{
+        span{
+            h2{
+                font-size: 16px;
+            }
+        }
+    }
+}
+    @media (min-width:750px){
+        .subtitle-banner{
+            span{
+                h2{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media (min-width:1440px){
+        .subtitle-banner{
+            span{
+                h2{
+                    font-size: 17px;
+                }
+            }
+        }
+    
+}
+    @media (min-width:1920px){
+        .subtitle-banner{
+            span{
+                h2{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    
+    
+    
+    
