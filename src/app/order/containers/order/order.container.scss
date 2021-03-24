@@ -10,6 +10,7 @@
 
 .container-content-card{
     height: 600px;
+    margin:10px 0px;
 }
 
 .product-img{
@@ -24,6 +25,9 @@
     .product-img{
     height:200px;
     }
+    .container-content-card{
+        height: max-content;
+    }
     }
 @media (min-width:350px){
     
@@ -32,6 +36,7 @@ height:300px;
 }
 .container-content-card{
     justify-content: center;
+    height: max-content;
 }
 }
 
@@ -41,6 +46,7 @@ height:300px;
         }
         .container-content-card{
             justify-content: center;
+            height: max-content;
         }
 }
 @media (min-width:1440px){
@@ -49,6 +55,7 @@ height:300px;
         }
         .container-content-card{
             justify-content: flex-end;
+            height: 600px;
         }
 }
 @media (min-width:1920px){

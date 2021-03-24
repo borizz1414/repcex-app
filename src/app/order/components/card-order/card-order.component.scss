@@ -131,7 +131,7 @@
 @media (min-width:350px){
     
     .card-order{
-        max-height: 589px;
+        max-height: max-content !important;
 
     
     }
@@ -142,7 +142,7 @@
 }
     @media (min-width:750px){
         .card-order{
-            max-height: 589px;
+            max-height: max-content !important;
         
         }
         .container-card-order{
@@ -150,9 +150,18 @@
         }
         
     }
+    @media (min-width:1000px){
+        .card-order{
+            max-height: 589px !important;
+        
+        }
+        .container-card-order{
+            width: 340px;
+        }
+    }
     @media (min-width:1440px){
         .card-order{
-            max-height: 589px;
+            max-height: 589px !important;
         
         }
         .container-card-order{
@@ -162,7 +171,7 @@
     }
     @media (min-width:1920px){
         .card-order{
-            max-height: 700px;
+            max-height: 700px !important;
         
         }
         .container-card-order{

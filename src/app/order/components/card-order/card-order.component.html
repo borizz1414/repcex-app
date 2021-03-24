@@ -1,7 +1,7 @@
 <div class="container-card-order">
     <div class="card-order">
         <div class="header-card">
-            <h1>¡Pide ya tu <b>REPCEX!</b></h1>
+            <h1>¡{{type == 'client' ? 'Pide' : 'Vende'}} ya tu <b>REPCEX!</b></h1>
             <p>Completa los datos a continuación y haz tu pedido ahora mismo.</p>
         </div>
           <app-information-order *ngIf="content_card === 'informacion'"></app-information-order>
