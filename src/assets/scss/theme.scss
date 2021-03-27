@@ -1,4 +1,6 @@
-
+$black:#272727;
+$blue:#000C6F;
+$red:#FB0000;
 /* FONTS */
 @font-face {
     font-family: "OpenSans-Light";
@@ -41,12 +43,20 @@
     src: url("../fonts/Roboto-Black.ttf");
   
   }
-  
-  // 
+  //Padding content center  
+  .p-content-dashboard{
+    padding: 20px 30px;
+  }
+  // P MARGIN 0
+  .m-0{
+    margin: 0 !important;
+  }
+
+  // A - HREF SIN LINEA DEBAJO
   a{
     text-decoration: none;
   }
-  // 
+
   // BUTTONS
   .btn-red-repcex{
     border-radius: 10px !important;
@@ -54,6 +64,14 @@
     color:white !important;
     margin:0px 5px !important;
 }
+.btn-new-order{
+  color:white;
+  border-radius: 10px !important;
+  i{
+    margin:0px 4px;
+  }
+}
+
 .btn-white-outline-repcex{
     border-radius: 10px !important;
     font-family: 'Roboto-Regular' !important;
@@ -72,10 +90,13 @@
 input:focus{
 outline: none;
 }
+select:focus{
+  outline: none;
+}
+textarea:focus{
+  outline: none;
+  }
 .input-order-repcex::placeholder{
   color:#D9D9D9;
   font-family: 'OpenSans-Light';
 }
-$black:#272727;
-$blue:#000C6F;
-$red:#FB0000;

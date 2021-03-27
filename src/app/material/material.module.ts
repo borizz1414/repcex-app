@@ -6,6 +6,12 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatIconModule} from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatTableModule} from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   declarations: [],
@@ -16,7 +22,13 @@ import {MatRadioModule} from '@angular/material/radio';
     MatExpansionModule,
     MatDividerModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatBadgeModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule,
+    MatSortModule
 
   ],exports:[
     MatButtonModule,
@@ -24,7 +36,13 @@ import {MatRadioModule} from '@angular/material/radio';
     MatExpansionModule,
     MatDividerModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatBadgeModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule,
+    MatSortModule
   ]
 })
 export class MaterialModule { }

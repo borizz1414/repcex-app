@@ -1,0 +1,38 @@
+@import '~src/assets/scss/vars.scss';
+.header-dashboard{
+    width: 100%;
+    height: 150px;
+    padding: 30px;
+
+}
+.header{
+    background: white;
+    height: 83px;
+    box-shadow: 0px 0px 30px #A7A7A729;
+    border-radius: 10px;
+}
+.icons-header{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    mat-icon{
+        font-size: 30px;
+    }
+}
+.profile-header{
+    @extend .icons-header;
+    justify-content: space-between;
+    .name{
+        p{
+            font-family: 'Roboto-BlackItalic';
+            color:$black;
+            font-size: 18px;
+            margin: 0;
+        }
+        span{
+            font-size: 16px;
+            font-family: 'OpenSans-Light';
+        }
+    }
+}

@@ -6,13 +6,16 @@ import { HeaderComponent } from './components/header/header.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { DashboardSkeletonContainer } from './containers/dashboard-skeleton/dashboard-skeleton.container';
 import { MyOrdersContainer } from './client/containers/my-orders/my-orders.container';
+import { MaterialModule } from '../material/material.module';
+import { CurrentPageTagComponent } from './components/current-page-tag/current-page-tag.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer],
+  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    MaterialModule
   ]
 })
 export class DashboardModule { }
