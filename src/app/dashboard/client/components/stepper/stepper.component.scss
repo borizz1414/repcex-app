@@ -1,0 +1,36 @@
+@import '~src/assets/scss/vars.scss';
+.stepper-item{
+    width: max-content;
+i{
+    color:$stepper-disabled;
+    margin:0px 5px;
+}
+font-family: 'OpenSans-Bold';
+.number-stepper{
+    width: 40px;
+    height: 40px;
+    background: $blue;
+    color: white;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    margin:0px 5px;
+    color:$blue;
+}
+
+}
+.stepper-item--disabled{
+.number-stepper{
+    background: $stepper-disabled;
+    color: white;
+
+}
+span{
+    color:$stepper-disabled;
+}
+
+}
+

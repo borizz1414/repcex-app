@@ -1,3 +1,4 @@
+
 import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
@@ -26,11 +27,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
  */
 
  @Component({
-  selector: 'app-my-orders-container',
-  templateUrl: './my-orders.container.html',
-  styleUrls: ['./my-orders.container.scss']
+  selector: 'app-table-my-orders',
+  templateUrl: './table-my-orders.component.html',
+  styleUrls: ['./table-my-orders.component.scss']
 })
-export class MyOrdersContainer implements OnInit {
+export class TableMyOrdersComponent implements OnInit {
   displayedColumns: string[] = ['product', 'quantity', 'price', 'status'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 

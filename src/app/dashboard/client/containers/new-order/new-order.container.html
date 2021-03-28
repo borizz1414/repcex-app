@@ -1,0 +1,54 @@
+<div class="container-my-orders">
+    <app-go-back-orders></app-go-back-orders>
+    <div class="title">
+        <h1>Nuevo pedido</h1>
+    </div>
+    <!-- STEPPER -->
+    <app-stepper></app-stepper>
+    <!-- CARD NEW ORDER -->
+    <div class="card card-new-order">
+        <!-- DIRECTION CLIENT ORDER -->
+        <app-direction-form-order></app-direction-form-order>
+        <!-- HEADER TABLE -->
+        <div class="row">
+            <div class="col-xs-7">
+                Producto<br>
+
+            </div>
+            <div class="col-xs-3">
+                Precio<br>
+            </div>
+            <div class="col-xs-2">
+                Cantidad<br>
+            </div>
+        </div>
+        <!-- LIST PRODUCTS -->
+        <br>
+        <app-products-list></app-products-list>
+        <div class="select-distributor-text">
+            <br>
+            Elige un distribuidor
+        </div>
+        <!-- SELECT DISTRIBUTORS -->
+        <app-distributor-list></app-distributor-list>
+        <!-- SUB TOTAL - TOTAL-->
+        <br>
+        <div class="row">
+            <div class="col-xs-offset-9 col-xs-3 d-flex j-content-sb">
+                <p>Subtotal</p>
+                <p>{{'80' | currency}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-9 col-xs-3 d-flex j-content-sb">
+                <p class="open-sans-bold">Total</p>
+                <p class="open-sans-bold">{{'80' | currency}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row p-content-dashboard">
+        <div class="col-xs-offset-11 col-xs-1">
+            <button mat-raised-button class="btn-red-repcex" color="accent"> CONTINUAR</button>
+            </div>
+    </div>
+</div>

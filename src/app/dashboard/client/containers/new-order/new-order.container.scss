@@ -1,0 +1,12 @@
+@import '~src/assets/scss/vars.scss';
+
+.title{
+    h1{
+        font-family: 'OpenSans-ExtraBold';
+        color:$black;
+    }
+}
+
+.card{
+    padding: 20px;
+}

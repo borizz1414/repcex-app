@@ -43,6 +43,43 @@ $red:#FB0000;
     src: url("../fonts/Roboto-Black.ttf");
   
   }
+  // FONTS CLASS
+  .open-sans-bold{
+    font-family: 'OpenSans-Bold';
+  }
+  .open-sans-e-bold{
+    font-family: 'OpenSans-ExtraBold';
+  }
+  .open-sans-i-bold{
+    font-family: 'OpenSans-ExtraBoldItalic';
+  }
+  .open-sans-light{
+    font-family: 'OpenSans-Light';
+  }
+  .open-sans-regular{
+    font-family: 'OpenSans-Regular';
+  }
+  .roboto-regular{
+    font-family: 'Roboto-Regular';
+  }
+  .roboto-bold{
+    font-family: 'Roboto-Bold';
+  }
+  .roboto-e-bold{
+    font-family: 'Roboto-ExtraBold';
+  }
+  .roboto-black{
+    font-family: 'Roboto-Black';
+  }
+  .roboto-i-black{
+    font-family: 'Roboto-BlackItalic';
+  }
+  .roboto-i-bold{
+    font-family: 'Roboto-BoldItalic';
+  }
+  .roboto-light{
+    font-family: 'Roboto-Light';
+  }
   //Padding content center  
   .p-content-dashboard{
     padding: 20px 30px;
@@ -50,6 +87,12 @@ $red:#FB0000;
   // P MARGIN 0
   .m-0{
     margin: 0 !important;
+  }
+  // CARD
+  .card{
+    box-shadow: 0px 0px 30px #A7A7A729;
+border-radius: 10px;
+margin:10px 0px;
   }
 
   // A - HREF SIN LINEA DEBAJO

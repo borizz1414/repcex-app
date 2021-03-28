@@ -8,14 +8,23 @@ import { DashboardSkeletonContainer } from './containers/dashboard-skeleton/dash
 import { MyOrdersContainer } from './client/containers/my-orders/my-orders.container';
 import { MaterialModule } from '../material/material.module';
 import { CurrentPageTagComponent } from './components/current-page-tag/current-page-tag.component';
+import { TableMyOrdersComponent } from './client/components/table-my-orders/table-my-orders.component';
+import { NewOrderContainer } from './client/containers/new-order/new-order.container';
+import { GoBackOrdersComponent } from './client/components/go-back-orders/go-back-orders.component';
+import { StepperComponent } from './client/components/stepper/stepper.component';
+import { OrderModule } from '../order/order.module';
+import { ProductsListComponent } from './client/components/products-list/products-list.component';
+import { DistributorListComponent } from './client/components/distributor-list/distributor-list.component';
+import { DirectionFormOrderComponent } from './client/components/direction-form-order/direction-form-order.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent],
+  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    MaterialModule
+    MaterialModule,
+    OrderModule
   ]
 })
 export class DashboardModule { }

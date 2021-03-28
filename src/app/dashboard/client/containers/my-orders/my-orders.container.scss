@@ -14,7 +14,11 @@ table {
     color:$black;
     font-family: 'OpenSans-Regular';
 }  
-// 
+.label-my-orders{
+    margin-right: 20px;
+    font-family: 'OpenSans-Light';
+    font-size: 18px;
+}
 .per-page{
     margin-top: 40px;
     margin-top: 40px;
@@ -22,87 +26,4 @@ table {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.label-my-orders{
-    margin-right: 20px;
-    font-family: 'OpenSans-Light';
-    font-size: 18px;
-}
-.mat-elevation-z8{
-    width: 100%;
-    margin:10px 0px;
-}
-.img-product{
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    background: $header-table-gray;
-}
-.info-product{
-    color:$black;
-    p{
-        font-family: 'OpenSans-Bold';
-    }
-    span{
-        font-family: 'OpenSans-Light';
-        color:$grey;
-    }
-}
-
-.chips-status{
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    padding: 5px 10px;
-    border-radius: 50px;
-    p{
-        font-family: 'OpenSans-Bold';
-        
-    }
-}
-.chip-green{
-    background: $chip-bg-green;
-    p{
-        color:$chip-green;
-    }
-}
-.chip-orange{
-    background: $chip-bg-orange;
-    p{
-        color:$chip-orange;
-    }
-}
-.chip-gray{
-    background: $header-table-gray;
-    p{
-        color:$grey;
-    }
-}
-.chip-turquoise{
-    background: $chip-bg-turquoise;
-    p{
-        color:$chip-turquoise;
-    }
-}
-// PAGINATOR
-.paginator-table{
-    p{
-        color:$grey;
-        margin-right: 10px;
-    }
-    .icon-container{
-     
-    
-    button{
-        margin:0px 5px;
-        border-radius: 50%;
-        background: $blue;
-        min-width: 30px !important;
-        padding: 0px;
-        i{
-            margin:0px 5px;
-            color:white;
-        }
-    }
-}
 }

@@ -14,12 +14,13 @@ import { InformationOrderComponent } from './shared/components/information-order
 import { DistributorOrderComponent } from './shared/components/distributor-order/distributor-order.component';
 import { ClientOrderComponent } from './shared/components/client-order/client-order.component';
 import { DistributorContainer } from './containers/distributor/distributor.container';
+import { QuantityProductsSelectComponent } from './components/quantity-products-select/quantity-products-select.component';
 
 
 
 @NgModule({
-  declarations: [OrderContainer, HeaderComponent, CardOrderComponent, BannerComponent, InformationOrderContainer, HeaderCardComponent, InformationOrderComponent, DistributorOrderComponent, ClientOrderComponent, DistributorContainer ],
-  exports:[HeaderComponent,BannerComponent],
+  declarations: [OrderContainer, HeaderComponent, CardOrderComponent, BannerComponent, InformationOrderContainer, HeaderCardComponent, InformationOrderComponent, DistributorOrderComponent, ClientOrderComponent, DistributorContainer, QuantityProductsSelectComponent ],
+  exports:[HeaderComponent,BannerComponent, QuantityProductsSelectComponent],
   imports: [
     CommonModule,
     OrderRoutingModule,

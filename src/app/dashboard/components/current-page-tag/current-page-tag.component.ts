@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-current-page-tag',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./current-page-tag.component.scss']
 })
 export class CurrentPageTagComponent implements OnInit {
-
+  @Input() text;
   constructor() { }
 
   ngOnInit(): void {

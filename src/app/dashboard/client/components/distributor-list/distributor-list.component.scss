@@ -1,0 +1,28 @@
+@import '~src/assets/scss/vars.scss';
+// LIST PRODUCTS
+.item-list-product{
+    margin:10px 0px;
+}
+.card-distributor-info{
+    padding:10px;
+    cursor: pointer;
+    margin:10px;
+    border-radius: 20px;
+    border:1px solid darkgray;
+    width: 200px;
+}
+.card-distributor-info:hover{
+    color:white;
+    background: $blue;
+    border:none;
+    .price-card-distributor{
+        color:white;
+    }
+}
+.name-distributor-card,.price-card-distributor{
+    font-size: 20px;
+    margin:10px 0px;
+}
+.price-card-distributor{
+    color:$blue;
+}

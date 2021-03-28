@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-header-order',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
