@@ -16,10 +16,12 @@ import { OrderModule } from '../order/order.module';
 import { ProductsListComponent } from './client/components/products-list/products-list.component';
 import { DistributorListComponent } from './client/components/distributor-list/distributor-list.component';
 import { DirectionFormOrderComponent } from './client/components/direction-form-order/direction-form-order.component';
+import { InformationNewOrderContainer } from './client/containers/information-new-order/information-new-order.container';
+import { FormInformationNewOrderComponent } from './shared/components/form-information-new-order/form-information-new-order.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent],
+  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent, InformationNewOrderContainer, FormInformationNewOrderComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
