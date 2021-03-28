@@ -1,0 +1,37 @@
+@import '~src/assets/scss/vars.scss';
+.chips-status{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 50px;
+    p{
+        font-family: 'OpenSans-Bold';
+        
+    }
+}
+.chip-green{
+    background: $chip-bg-green;
+    p{
+        color:$chip-green;
+    }
+}
+.chip-orange{
+    background: $chip-bg-orange;
+    p{
+        color:$chip-orange;
+    }
+}
+.chip-gray{
+    background: $header-table-gray;
+    p{
+        color:$grey;
+    }
+}
+
+.chip-turquoise{
+    background: $chip-bg-turquoise;
+    p{
+        color:$chip-turquoise;
+    }
+}

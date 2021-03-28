@@ -1,0 +1,55 @@
+@import '~src/assets/scss/vars.scss';
+.card{
+    padding: 20px;
+    .open-sans-bold{
+        color:$grey;
+    }
+}
+.date-info-order{
+    p{
+        color:$black;
+        font-size: 26px;
+    }
+}
+.img-profile-distributor{
+    margin-right: 10px;
+}
+.star-icon{
+    color:$star;
+    font-size: 15px;
+}
+.qualify-starts-distributor{
+
+    .qualify-number{
+        padding: 6px;
+        border-radius: 10px;
+        border:1px solid darkgray;
+        background: #e6e6e6;
+    }
+    i{
+        font-size: 24px;
+        color:rgb(211, 207, 207);
+        margin:0px 4px;
+    }
+}
+.dist-title-card{
+    color:$grey;
+}
+.name-dist{
+    p{
+
+        color:$black !important;
+    }
+}
+.direction-delivery{
+    color:$black !important;
+}
+.detail-payment-dist{
+    span{
+        color:$chip-green !important; 
+    }
+}
+.fa-wallet{
+    color:$blue;
+    font-size: 30px;
+}

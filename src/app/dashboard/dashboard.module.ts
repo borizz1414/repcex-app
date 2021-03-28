@@ -18,10 +18,12 @@ import { DistributorListComponent } from './client/components/distributor-list/d
 import { DirectionFormOrderComponent } from './client/components/direction-form-order/direction-form-order.component';
 import { InformationNewOrderContainer } from './client/containers/information-new-order/information-new-order.container';
 import { FormInformationNewOrderComponent } from './shared/components/form-information-new-order/form-information-new-order.component';
+import { OrderDetailsContainer } from './client/containers/order-details/order-details.container';
+import { ChipsComponent } from './shared/components/chips/chips.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent, InformationNewOrderContainer, FormInformationNewOrderComponent],
+  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent, InformationNewOrderContainer, FormInformationNewOrderComponent, OrderDetailsContainer, ChipsComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
