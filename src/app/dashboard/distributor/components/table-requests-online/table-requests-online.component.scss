@@ -1,0 +1,15 @@
+@import '../../../client/components/table-my-orders/table-my-orders.component.scss';
+.actions-table{
+    i{
+        margin:0px 8px;
+        font-size: 22px;
+        color:$black;
+        cursor:pointer;
+        transform: 0.6s;
+
+
+    }
+    i:hover{
+        color:$blue;
+    }
+}

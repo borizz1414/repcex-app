@@ -20,10 +20,17 @@ import { InformationNewOrderContainer } from './client/containers/information-ne
 import { FormInformationNewOrderComponent } from './shared/components/form-information-new-order/form-information-new-order.component';
 import { OrderDetailsContainer } from './client/containers/order-details/order-details.container';
 import { ChipsComponent } from './shared/components/chips/chips.component';
+import { NewOrderPlanContainer } from './distributor/containers/new-order-plan/new-order-plan.container';
+import { RequestsOnlineContainer } from './distributor/containers/requests-online/requests-online.container';
+import { FiltersTableComponent } from './components/filters-table/filters-table.component';
+import { TableRequestsOnlineComponent } from './distributor/components/table-requests-online/table-requests-online.component';
+import { TableMyProductsComponent } from './distributor/components/table-my-products/table-my-products.component';
+import { MyProductsContainer } from './distributor/containers/my-products/my-products.container';
+import { DirectSellsContainer } from './distributor/containers/direct-sells/direct-sells.container';
 
 
 @NgModule({
-  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent, InformationNewOrderContainer, FormInformationNewOrderComponent, OrderDetailsContainer, ChipsComponent],
+  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent, InformationNewOrderContainer, FormInformationNewOrderComponent, OrderDetailsContainer, ChipsComponent, NewOrderPlanContainer, RequestsOnlineContainer, FiltersTableComponent, TableRequestsOnlineComponent, TableMyProductsComponent, MyProductsContainer, DirectSellsContainer],
   imports: [
     CommonModule,
     DashboardRoutingModule,

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard-skeleton.container.scss']
 })
 export class DashboardSkeletonContainer implements OnInit {
-
+  type_user = 'dist'
   constructor() { }
 
   ngOnInit(): void {

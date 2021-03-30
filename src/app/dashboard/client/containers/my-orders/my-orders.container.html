@@ -1,27 +1,10 @@
 <div class="container-my-orders">
     <!-- CURRENT PAGE TAG -->
     <app-current-page-tag text="Mis pedidos"></app-current-page-tag>
-   <a routerLink="/dashboard/nuevo-pedido"> <button mat-raised-button class="btn-new-order" color="primary"> <i class="fas fa-plus"></i> Nuevo pedido</button></a>
+    <a routerLink="/dashboard/nuevo-pedido"> <button mat-raised-button class="btn-new-order" color="primary"> <i
+                class="fas fa-plus"></i> Nuevo pedido</button></a>
     <!-- FILTERS -->
-    <div class="filter-table d-flex j-content-sb">
-        <div class="per-page">
-            <label for="" class="label-my-orders">Entradas</label>
-            <select name="" id="" class="input-order-repcex">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-        </div>
-        <div class="search-my-orders">
-            <div class="search-input">
-                <mat-form-field appearance="outline">
-                    <mat-label>Buscar</mat-label>
-                    <input matInput>
-                    <mat-icon matSuffix>search</mat-icon>
-                </mat-form-field>
-            </div>
-        </div>
-    </div>
+    <app-filters-table></app-filters-table>
     <!-- TABLE -->
     <app-table-my-orders></app-table-my-orders>
 </div>

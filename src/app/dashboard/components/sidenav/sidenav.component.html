@@ -1,10 +1,27 @@
 <div class="sidenav sidenav__menu--blue">
         <div class="logo">
-            <img src="assets/img/logo/logo.svg" alt="">
+            <img src="assets/img/logo/logo.svg" alt="logo" width="180px">
         </div>
         <div class="menu-sidenav-items">
             <div class="menu-item" routerLinkActive="menu-item-selected">
                 <i class="fas fa-boxes"></i> <a routerLink="/dashboard/mis-pedidos">Mis pedidos</a>
             </div>
         </div>
+        <ng-container *ngIf="user == 'dist'">   
+        <div class="menu-sidenav-items">
+            <div class="menu-item" routerLinkActive="menu-item-selected">
+                <i class="fas fa-box"></i> <a routerLink="/dashboard/solicitudes">Solicitudes en linea</a>
+            </div>
+        </div>
+        <div class="menu-sidenav-items">
+            <div class="menu-item" routerLinkActive="menu-item-selected">
+                <i class="fas fa-hand-holding-usd"></i> <a routerLink="/dashboard/ventas-directa">Ventas directas</a>
+            </div>
+        </div>
+        <div class="menu-sidenav-items">
+            <div class="menu-item" routerLinkActive="menu-item-selected">
+                <i class="fas fa-shopping-basket"></i> <a routerLink="/dashboard/mis-productos">Mis productos</a>
+            </div>
+        </div>
+    </ng-container>
     </div>

@@ -4,12 +4,12 @@
         <h1>Nuevo pedido</h1>
     </div>
     <!-- STEPPER -->
-    <app-stepper></app-stepper>
+    <app-stepper [user]="user_type"></app-stepper>
     <!-- CARD NEW ORDER -->
     <div class="row">
         <div class="col-xs-8">
             <div class="card card-new-order">
-                <!-- DIRECTION CLIENT ORDER -->
+                <!-- INFORMATION CLIENT ORDER -->
                 <app-form-information-new-order></app-form-information-new-order>
         </div>
         </div>

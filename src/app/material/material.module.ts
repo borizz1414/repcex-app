@@ -12,6 +12,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [],
@@ -28,7 +29,8 @@ import {MatSortModule} from '@angular/material/sort';
     MatFormFieldModule,
     MatInputModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    MatSlideToggleModule
 
   ],exports:[
     MatButtonModule,
@@ -42,7 +44,8 @@ import {MatSortModule} from '@angular/material/sort';
     MatFormFieldModule,
     MatInputModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    MatSlideToggleModule
   ]
 })
 export class MaterialModule { }

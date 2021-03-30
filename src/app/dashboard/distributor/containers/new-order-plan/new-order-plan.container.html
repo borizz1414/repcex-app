@@ -1,0 +1,88 @@
+<div class="container-my-orders">
+    <app-go-back-orders></app-go-back-orders>
+    <div class="title">
+        <h1>Nuevo pedido</h1>
+    </div>
+    <!-- STEPPER -->
+    <app-stepper [user]="user_type"></app-stepper>
+    <!-- CARD NEW ORDER -->
+    <div class="row">
+        <div class="col-xs-8">
+            <div class="card card-new-order">
+                <!-- DIRECTION CLIENT ORDER -->
+                <app-direction-form-order></app-direction-form-order>
+                <!-- LIST PLAN OR PRODUCTS -->
+                <div class="select-distributor-text">
+                    <br>
+                    Elige un plan
+                </div>
+                <div class="container-plans d-flex j-content-se">
+                    <div class="card-distributor-info ">
+                        <div class="img-plan d-flex j-content-center">
+                            <img src="assets/img/bg/producto-rosado.png" width="30px" alt="">
+                        </div>
+                        <br>
+                        <p class="m-0 roboto-i-black name-distributor-card text-a-center">100 Unidades</p>
+                        <p class="open-sans-light text-a-center">Precio unitario <b>$27.000</b></p>
+                    </div> 
+                    <div class="card-distributor-info ">
+                        <div class="img-plan d-flex j-content-center">
+                            <img src="assets/img/bg/producto-rosado.png" width="30px" alt="">
+                        </div>
+                        <br>
+                        <p class="m-0 roboto-i-black name-distributor-card text-a-center">25 Unidades</p>
+                        <p class="open-sans-light text-a-center">Precio unitario <b>$37.000</b></p>
+                    </div> 
+                    <div class="card-distributor-info ">
+                        <div class="img-plan d-flex j-content-center">
+                            <img src="assets/img/bg/producto-rosado.png" width="30px" alt="">
+                        </div>
+                        <br>
+                        <p class="m-0 roboto-i-black name-distributor-card text-a-center">45 Unidades</p>
+                        <p class="open-sans-light text-a-center">Precio unitario <b>$47.000</b></p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="card card-new-order">
+                <div class="d-flex j-content-sb">
+                    <p>Producto</p>
+                    <p>Precio</p>
+                </div>
+                <div class="d-flex j-content-sb">
+                    <div class="product-img d-flex">
+                        <img src="assets/img/bg/producto-rosado.png" width="30px" alt="">
+                        <p class="roboto-i-black">REPCEX 500ml<br><span class="open-sans-light">01 Unidades</span></p>
+
+                    </div>
+                    <p class="open-sans-bold">{{'50000' | currency}}</p>
+                </div>
+                <br>
+                <div class="d-flex j-content-sb">
+                    <div class="product-img d-flex">
+                        <img src="assets/img/bg/producto-rosado.png" width="30px" alt="">
+                        <p class="roboto-i-black">REPCEX 500ml<br><span class="open-sans-light">01 Unidades</span></p>
+
+                    </div>
+                    <p class="open-sans-bold">{{'50000' | currency}}</p>
+                </div>
+                <br>
+                <div class="d-flex j-content-sb">
+                    <p>Subtotal</p>
+                    <p>{{'100000' | currency}}</p>
+                </div>
+                <div class="d-flex j-content-sb">
+                    <p class="open-sans-bold">Total</p>
+                    <p class="open-sans-bold">{{'200000' | currency}}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-xs-offset-10 col-xs-2 d-flex j-content-fe">
+            <button mat-raised-button class="btn-red-repcex" color="accent"> CONTINUAR <i
+                    class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>

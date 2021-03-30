@@ -5,6 +5,10 @@ import { MyOrdersContainer } from './client/containers/my-orders/my-orders.conta
 import { NewOrderContainer } from './client/containers/new-order/new-order.container';
 import { OrderDetailsContainer } from './client/containers/order-details/order-details.container';
 import { DashboardSkeletonContainer } from './containers/dashboard-skeleton/dashboard-skeleton.container';
+import { DirectSellsContainer } from './distributor/containers/direct-sells/direct-sells.container';
+import { MyProductsContainer } from './distributor/containers/my-products/my-products.container';
+import { NewOrderPlanContainer } from './distributor/containers/new-order-plan/new-order-plan.container';
+import { RequestsOnlineContainer } from './distributor/containers/requests-online/requests-online.container';
 
 
 const routes: Routes = [
@@ -21,12 +25,28 @@ const routes: Routes = [
         component:NewOrderContainer
       },
       {
+        path:'nuevo-pedido/distribuidor',
+        component:NewOrderPlanContainer
+      },
+      {
         path:'nuevo-pedido/informacion',
         component:InformationNewOrderContainer
       },
       {
         path:'detalle-pedido',
         component:OrderDetailsContainer
+      },
+      {
+        path:'solicitudes',
+        component:RequestsOnlineContainer
+      },
+      {
+        path:'ventas-directa',
+        component:DirectSellsContainer
+      },
+      {
+        path:'mis-productos',
+        component:MyProductsContainer
       },
       {
         path:'**',

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./information-new-order.container.scss']
 })
 export class InformationNewOrderContainer implements OnInit {
-
+  user_type = 'dist';
   constructor() { }
 
   ngOnInit(): void {
