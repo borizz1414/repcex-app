@@ -5,6 +5,7 @@ import { MyOrdersContainer } from './client/containers/my-orders/my-orders.conta
 import { NewOrderContainer } from './client/containers/new-order/new-order.container';
 import { OrderDetailsContainer } from './client/containers/order-details/order-details.container';
 import { DashboardSkeletonContainer } from './containers/dashboard-skeleton/dashboard-skeleton.container';
+import { DirectSellsDetailsContainer } from './distributor/containers/direct-sells-details/direct-sells-details.container';
 import { DirectSellsContainer } from './distributor/containers/direct-sells/direct-sells.container';
 import { MyProductsContainer } from './distributor/containers/my-products/my-products.container';
 import { NewOrderPlanContainer } from './distributor/containers/new-order-plan/new-order-plan.container';
@@ -37,11 +38,19 @@ const routes: Routes = [
         component:OrderDetailsContainer
       },
       {
+        path:'detalle-venta',
+        component:DirectSellsDetailsContainer
+      },
+      {
         path:'solicitudes',
         component:RequestsOnlineContainer
       },
       {
         path:'ventas-directa',
+        component:DirectSellsContainer
+      },
+      {
+        path:'ventas-directas',
         component:DirectSellsContainer
       },
       {

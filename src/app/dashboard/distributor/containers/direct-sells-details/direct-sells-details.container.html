@@ -1,0 +1,88 @@
+<div class="order-details-container">
+    <app-go-back-orders></app-go-back-orders>
+    <div class="row">
+        <div class="col-xs-8">
+            <!-- STATUS ORDER -->
+            <div class="card">
+                <div class="date-info-order">
+                    <p class="open-sans-e-bold">$90.000 - LUN 01 06:17pm</p>
+                    <span>Estado del pedido</span>
+                    <br>
+                    <br>
+                    <app-chips class_status="chip-gray"></app-chips>
+                </div>
+            </div>
+            <!-- ORDER DETAILS -->
+            <div class="card">
+                <!-- HEADER TABLE -->
+                <div class="row">
+                    <div class="col-xs-7">
+                        Producto<br>
+
+                    </div>
+                    <div class="col-xs-3">
+                        Cantidad<br>
+                    </div>
+                    <div class="col-xs-2">
+                        Total<br>
+                    </div>
+                </div>
+                <div class="row item-list-product">
+                    <div class="col-xs-7 d-flex a-items-center">
+                        <img width="40px" src="assets/img/bg/producto-rosado.png" alt="">
+                
+                    </div>
+                    <div class="col-xs-3 d-flex a-items-center open-sans-bold">
+                        09
+                    </div>
+                    <div class="col-xs-2 d-flex a-items-center">
+                        {{'90000' | currency}}<br>
+                    </div>
+                </div>
+                <br>
+                <div class="row item-list-product">
+                    <div class="col-xs-7 d-flex a-items-center">
+                        <img width="40px" src="assets/img/bg/producto-rosado.png" alt="">
+                
+                    </div>
+                    <div class="col-xs-3 d-flex a-items-center open-sans-bold">
+                        09
+                    </div>
+                    <div class="col-xs-2 d-flex a-items-center">
+                        {{'90000' | currency}}<br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-offset-8 col-xs-4 d-flex j-content-sb">
+                        <p>Subtotal</p>
+                        <p>{{'90000' | currency}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-offset-8 col-xs-4 d-flex j-content-sb">
+                        <p class="open-sans-bold">Total</p>
+                        <p class="open-sans-bold">{{'90000' | currency}}</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <!-- QUALIFY DISTRIBUTOR -->
+            <div class="card">
+                <p class="open-sans-bold">Cliente</p>
+                <br>
+                <div class="distributor-user-list d-flex ">
+                    <div class="img-profile-distributor">
+                        <img src="assets/img/profile.png" alt="">
+                    </div>
+                    <div class="info-distributor d-flex j-content-sb a-items-center">
+                        <div class="name d-flex j-content-sb a-items-center">
+                            <p class="m-0 open-sans-bold name-client">Alex Rodriguez</p>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+
+</div>

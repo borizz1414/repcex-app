@@ -38,7 +38,7 @@
             <th mat-header-cell *matHeaderCellDef mat-sort-header> ACCIÓNES </th>
             <td mat-cell *matCellDef="let element">
                 <div class="actions-table">
-                   <a routerLink="/dashboard/detalle-pedido"><i class="fas fa-eye"></i></a> 
+                   <a routerLink="/dashboard/detalle-pedido" [routerLink]="'/dashboard/detalle-'+action_link_1" ><i class="fas fa-eye"></i></a> 
                     <i class="far fa-trash-alt"></i>
                 </div>
                

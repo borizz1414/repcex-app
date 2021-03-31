@@ -79,11 +79,13 @@ export class TableRequestsOnlineComponent implements OnInit {
   ];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   @Input() status_column: string;
+  @Input() action_link_1:string;
   @ViewChild(MatSort) sort: MatSort;
 
   ngOnInit() {
     this.removeColumns();
     this.dataSource.sort = this.sort;
+    console.log(this.action_link_1)
   }
   removeColumns() {
     this.status_column === '1'
