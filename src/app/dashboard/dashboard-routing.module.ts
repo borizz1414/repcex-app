@@ -7,6 +7,7 @@ import { OrderDetailsContainer } from './client/containers/order-details/order-d
 import { DashboardSkeletonContainer } from './containers/dashboard-skeleton/dashboard-skeleton.container';
 import { DirectSellsDetailsContainer } from './distributor/containers/direct-sells-details/direct-sells-details.container';
 import { DirectSellsContainer } from './distributor/containers/direct-sells/direct-sells.container';
+import { EditProductContainer } from './distributor/containers/edit-product/edit-product.container';
 import { MyProductsContainer } from './distributor/containers/my-products/my-products.container';
 import { NewOrderPlanContainer } from './distributor/containers/new-order-plan/new-order-plan.container';
 import { RequestsOnlineContainer } from './distributor/containers/requests-online/requests-online.container';
@@ -56,6 +57,10 @@ const routes: Routes = [
       {
         path:'mis-productos',
         component:MyProductsContainer
+      },
+      {
+        path:'editar-producto',
+        component:EditProductContainer
       },
       {
         path:'**',

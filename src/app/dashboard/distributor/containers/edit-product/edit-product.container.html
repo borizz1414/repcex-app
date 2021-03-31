@@ -1,0 +1,81 @@
+<div class="container-edit-product">
+    <app-go-back-orders></app-go-back-orders>
+    <br>
+    <!-- NAME PRODUCT -->
+    <div class="name-product">
+        <p class="open-sans-e-bold">REPCEX PRESENTACIÓN 60ml</p>
+    </div>
+    <!-- EDIT PRODUCT -->
+    <div class="row">
+        <div class="col-xs-9">
+            <div class="card">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <mat-form-field appearance="outline" class="form-field-flex">
+                            <mat-label>Inventario</mat-label>
+                            <input matInput placeholder="Inventario">
+                            <div class="input-suffix">
+                                <span matSuffix>Unidades</span>
+                            </div>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-xs-4">
+                        <p class="title-form-card open-sans-bold">Valor del envío</p>
+                        <mat-radio-group aria-label="Select an option">
+                            <mat-radio-button value="1">GRATIS</mat-radio-button><br><br>
+                            <mat-radio-button value="2">Tarifa fija</mat-radio-button>
+                        </mat-radio-group>
+                        <br>
+                        <br>
+                        <mat-form-field appearance="outline" class="form-field-flex">
+                            <mat-label>Precio</mat-label>
+                            <input matInput>
+                            <div class="input-suffix">
+                                <span matSuffix>COP</span>
+                            </div>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-xs-4">
+                        <p class="title-form-card open-sans-bold">Tiempo aproximado de entrega</p>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Seleccionar</mat-label>
+                            <mat-select placeholder="Placeholder">
+                                <mat-option>
+                                    Inmediato
+                                </mat-option>
+                                <mat-option>
+                                    1 Día despues
+                                </mat-option>
+                                <mat-option>
+                                    2 Días despues
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <div class="card">
+                <p class="title-form-card open-sans-bold">Disponibilidad del producto</p>
+                <mat-slide-toggle color="primary" class="btn-slide-toggle"> <b>Habilitado</b></mat-slide-toggle>
+            </div>
+            <div class="card">
+                <p class="title-form-card open-sans-bold">Precio unitario</p>
+                <mat-form-field appearance="outline" class="form-field-flex">
+                    <mat-label>Precio</mat-label>
+                    <input matInput>
+                    <div class="input-suffix">
+                        <span matSuffix>COP</span>
+                    </div>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+    <!-- BUTTON SAVE -->
+    <div class="row">
+        <div class="col-xs-12">
+            <button mat-raised-button color="primary" class="w-10"> Guardar </button>
+        </div>
+    </div>

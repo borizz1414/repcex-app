@@ -28,10 +28,11 @@ import { TableMyProductsComponent } from './distributor/components/table-my-prod
 import { MyProductsContainer } from './distributor/containers/my-products/my-products.container';
 import { DirectSellsContainer } from './distributor/containers/direct-sells/direct-sells.container';
 import { DirectSellsDetailsContainer } from './distributor/containers/direct-sells-details/direct-sells-details.container';
+import { EditProductContainer } from './distributor/containers/edit-product/edit-product.container';
 
 
 @NgModule({
-  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent, InformationNewOrderContainer, FormInformationNewOrderComponent, OrderDetailsContainer, ChipsComponent, NewOrderPlanContainer, RequestsOnlineContainer, FiltersTableComponent, TableRequestsOnlineComponent, TableMyProductsComponent, MyProductsContainer, DirectSellsContainer, DirectSellsDetailsContainer],
+  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent, InformationNewOrderContainer, FormInformationNewOrderComponent, OrderDetailsContainer, ChipsComponent, NewOrderPlanContainer, RequestsOnlineContainer, FiltersTableComponent, TableRequestsOnlineComponent, TableMyProductsComponent, MyProductsContainer, DirectSellsContainer, DirectSellsDetailsContainer, EditProductContainer],
   imports: [
     CommonModule,
     DashboardRoutingModule,
