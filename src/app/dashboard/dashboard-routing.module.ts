@@ -9,6 +9,7 @@ import { DirectSellsDetailsContainer } from './distributor/containers/direct-sel
 import { DirectSellsContainer } from './distributor/containers/direct-sells/direct-sells.container';
 import { EditProductContainer } from './distributor/containers/edit-product/edit-product.container';
 import { MyProductsContainer } from './distributor/containers/my-products/my-products.container';
+import { NewDirectSellContainer } from './distributor/containers/new-direct-sell/new-direct-sell.container';
 import { NewOrderPlanContainer } from './distributor/containers/new-order-plan/new-order-plan.container';
 import { RequestsOnlineContainer } from './distributor/containers/requests-online/requests-online.container';
 
@@ -61,6 +62,10 @@ const routes: Routes = [
       {
         path:'editar-producto',
         component:EditProductContainer
+      },
+      {
+        path:'nueva-venta-directa',
+        component:NewDirectSellContainer
       },
       {
         path:'**',

@@ -1,0 +1,33 @@
+<div class="container-direct-sell">
+    <app-go-back-orders></app-go-back-orders>
+    <div class="title">
+        <h1>Nueva venta directa</h1>
+    </div>
+    <div class="card">
+        <mat-form-field class="mat-form-field-order" appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput>
+        </mat-form-field>
+              <!-- HEADER TABLE -->
+              <div class="row">
+                <div class="col-xs-7">
+                    Producto<br>
+    
+                </div>
+                <div class="col-xs-3">
+                    Precio<br>
+                </div>
+                <div class="col-xs-2">
+                    Cantidad<br>
+                </div>
+            </div>
+            <!-- LIST PRODUCTS -->
+            <br>
+            <app-products-list></app-products-list>
+    </div>
+    <div class="row ">
+        <div class="col-xs-offset-10 col-xs-2 d-flex j-content-fe">
+            <button mat-raised-button class="btn-red-repcex w-100" color="accent"> GUARDAR </button>
+            </div>
+    </div>
+    </div>
