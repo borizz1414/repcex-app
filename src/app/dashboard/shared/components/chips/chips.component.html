@@ -1,3 +1,10 @@
-<div [class]="class_status" class="chips-status">
+<div [class]="class_status" class="chips-status" [matMenuTriggerFor]="menu">
     <p class="m-0">Entregado</p>
 </div>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item>Pendiente</button>
+    <button mat-menu-item>En proceso</button>
+    <button mat-menu-item>Enviado</button>
+    <button mat-menu-item>Entregado</button>
+
+</mat-menu>
