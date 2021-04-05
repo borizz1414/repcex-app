@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./orders-distributors.container.scss']
 })
 export class OrdersDistributorsContainer implements OnInit {
+  table_options = {
+    icons:['edit','trash'],
+    data:[{}],
+    displayedColumns:[]
 
+  };
+  
   constructor() { }
 
   ngOnInit(): void {

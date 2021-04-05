@@ -35,10 +35,11 @@ import { FiltersComponent } from './admin/components/filters/filters.component';
 import { TableHomeComponent } from './admin/components/table-home/table-home.component';
 import { OrdersDistributorsContainer } from './admin/containers/orders-distributors/orders-distributors.container';
 import { OrdersClientsContainer } from './admin/containers/orders-clients/orders-clients.container';
+import { OrdersDetailsUsersContainer } from './admin/containers/orders-details-users/orders-details-users.container';
 
 
 @NgModule({
-  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent, InformationNewOrderContainer, FormInformationNewOrderComponent, OrderDetailsContainer, ChipsComponent, NewOrderPlanContainer, RequestsOnlineContainer, FiltersTableComponent, TableRequestsOnlineComponent, TableMyProductsComponent, MyProductsContainer, DirectSellsContainer, DirectSellsDetailsContainer, EditProductContainer, NewDirectSellContainer, HomeAdminContainer, FiltersComponent, TableHomeComponent, OrdersDistributorsContainer, OrdersClientsContainer],
+  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent, InformationNewOrderContainer, FormInformationNewOrderComponent, OrderDetailsContainer, ChipsComponent, NewOrderPlanContainer, RequestsOnlineContainer, FiltersTableComponent, TableRequestsOnlineComponent, TableMyProductsComponent, MyProductsContainer, DirectSellsContainer, DirectSellsDetailsContainer, EditProductContainer, NewDirectSellContainer, HomeAdminContainer, FiltersComponent, TableHomeComponent, OrdersDistributorsContainer, OrdersClientsContainer, OrdersDetailsUsersContainer],
   imports: [
     CommonModule,
     DashboardRoutingModule,

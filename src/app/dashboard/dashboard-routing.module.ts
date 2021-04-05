@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeAdminContainer } from './admin/containers/home-admin/home-admin.container';
 import { OrdersClientsContainer } from './admin/containers/orders-clients/orders-clients.container';
+import { OrdersDetailsUsersContainer } from './admin/containers/orders-details-users/orders-details-users.container';
 import { OrdersDistributorsContainer } from './admin/containers/orders-distributors/orders-distributors.container';
 import { InformationNewOrderContainer } from './client/containers/information-new-order/information-new-order.container';
 import { MyOrdersContainer } from './client/containers/my-orders/my-orders.container';
@@ -77,6 +78,10 @@ const routes: Routes = [
       {
         path:'admin/pedidos-clientes',
         component:OrdersClientsContainer
+      },
+      {
+        path:'admin/detalle-pedido',
+        component:OrdersDetailsUsersContainer
       },
       {
         path:'**',
