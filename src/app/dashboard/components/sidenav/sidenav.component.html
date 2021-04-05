@@ -2,7 +2,7 @@
         <div class="logo">
             <img src="assets/img/logo/logo.svg" alt="logo" width="180px">
         </div>
-        <div class="menu-sidenav-items">
+        <div class="menu-sidenav-items" *ngIf="user == 'user'">
             <div class="menu-item" routerLinkActive="menu-item-selected">
                 <i class="fas fa-boxes"></i> <a routerLink="/dashboard/mis-pedidos">Mis pedidos</a>
             </div>
@@ -21,6 +21,23 @@
         <div class="menu-sidenav-items">
             <div class="menu-item" routerLinkActive="menu-item-selected">
                 <i class="fas fa-shopping-basket"></i> <a routerLink="/dashboard/mis-productos">Mis productos</a>
+            </div>
+        </div>
+    </ng-container>
+        <ng-container *ngIf="user == 'admin'">   
+        <div class="menu-sidenav-items">
+            <div class="menu-item" routerLinkActive="menu-item-selected">
+                <i class="fas fa-box"></i> <a routerLink="/dashboard/admin/inicio">Inicio</a>
+            </div>
+        </div>
+        <div class="menu-sidenav-items">
+            <div class="menu-item" routerLinkActive="menu-item-selected">
+                <i class="fas fa-hand-holding-usd"></i> <a routerLink="/dashboard/admin/pedidos-distribuidores">Pedidos de Distribuidores</a>
+            </div>
+        </div>
+        <div class="menu-sidenav-items">
+            <div class="menu-item" routerLinkActive="menu-item-selected">
+                <i class="fas fa-shopping-basket"></i> <a routerLink="/dashboard/admin/pedidos-clientes">Pedidos de Clientes</a>
             </div>
         </div>
     </ng-container>

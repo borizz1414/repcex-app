@@ -7,7 +7,7 @@
             <option value="3">3</option>
         </select>
     </div>
-    <div class="search-my-orders">
+    <div class="search-my-orders d-flex">
         <div class="search-input">
             <mat-form-field appearance="outline">
                 <mat-label>Buscar</mat-label>
@@ -15,5 +15,13 @@
                 <mat-icon matSuffix>search</mat-icon>
             </mat-form-field>
         </div>
+        <div class="filters-admin" *ngIf='true'>
+            <select name="" id="" class="input-order-repcex">
+        <option value="1">Todos</option>
+        <option value="2">Distribuidores</option>
+        <option value="3">Clientes</option>
+    </select>
+</div>
     </div>
+
 </div>

@@ -30,10 +30,15 @@ import { DirectSellsContainer } from './distributor/containers/direct-sells/dire
 import { DirectSellsDetailsContainer } from './distributor/containers/direct-sells-details/direct-sells-details.container';
 import { EditProductContainer } from './distributor/containers/edit-product/edit-product.container';
 import { NewDirectSellContainer } from './distributor/containers/new-direct-sell/new-direct-sell.container';
+import { HomeAdminContainer } from './admin/containers/home-admin/home-admin.container';
+import { FiltersComponent } from './admin/components/filters/filters.component';
+import { TableHomeComponent } from './admin/components/table-home/table-home.component';
+import { OrdersDistributorsContainer } from './admin/containers/orders-distributors/orders-distributors.container';
+import { OrdersClientsContainer } from './admin/containers/orders-clients/orders-clients.container';
 
 
 @NgModule({
-  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent, InformationNewOrderContainer, FormInformationNewOrderComponent, OrderDetailsContainer, ChipsComponent, NewOrderPlanContainer, RequestsOnlineContainer, FiltersTableComponent, TableRequestsOnlineComponent, TableMyProductsComponent, MyProductsContainer, DirectSellsContainer, DirectSellsDetailsContainer, EditProductContainer, NewDirectSellContainer],
+  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent, InformationNewOrderContainer, FormInformationNewOrderComponent, OrderDetailsContainer, ChipsComponent, NewOrderPlanContainer, RequestsOnlineContainer, FiltersTableComponent, TableRequestsOnlineComponent, TableMyProductsComponent, MyProductsContainer, DirectSellsContainer, DirectSellsDetailsContainer, EditProductContainer, NewDirectSellContainer, HomeAdminContainer, FiltersComponent, TableHomeComponent, OrdersDistributorsContainer, OrdersClientsContainer],
   imports: [
     CommonModule,
     DashboardRoutingModule,

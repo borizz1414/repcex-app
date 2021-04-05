@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeAdminContainer } from './admin/containers/home-admin/home-admin.container';
+import { OrdersClientsContainer } from './admin/containers/orders-clients/orders-clients.container';
+import { OrdersDistributorsContainer } from './admin/containers/orders-distributors/orders-distributors.container';
 import { InformationNewOrderContainer } from './client/containers/information-new-order/information-new-order.container';
 import { MyOrdersContainer } from './client/containers/my-orders/my-orders.container';
 import { NewOrderContainer } from './client/containers/new-order/new-order.container';
@@ -48,10 +51,6 @@ const routes: Routes = [
         component:RequestsOnlineContainer
       },
       {
-        path:'ventas-directa',
-        component:DirectSellsContainer
-      },
-      {
         path:'ventas-directas',
         component:DirectSellsContainer
       },
@@ -66,6 +65,18 @@ const routes: Routes = [
       {
         path:'nueva-venta-directa',
         component:NewDirectSellContainer
+      },
+      {
+        path:'admin/inicio',
+        component:HomeAdminContainer
+      },
+      {
+        path:'admin/pedidos-distribuidores',
+        component:OrdersDistributorsContainer
+      },
+      {
+        path:'admin/pedidos-clientes',
+        component:OrdersClientsContainer
       },
       {
         path:'**',
