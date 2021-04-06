@@ -21,3 +21,20 @@
 .per-page-filter{
 width: 70px;
 }
+
+
+/************** WARNING NG DEEP ****************/
+::ng-deep .mat-form-filters{
+    .mat-form-field-wrapper{
+        margin:0px !important; 
+        padding: 0px;
+    }
+}
+.btn-download-container{
+    margin-bottom: 2px;
+    margin-left: 10px;
+    button{
+        background: #55C400;
+        color:white;
+    }
+}

@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FiltersTableComponent implements OnInit {
   @Input() show_filter_users : boolean;
+  @Input() btn_download : boolean;
   constructor() { }
 
   ngOnInit(): void {

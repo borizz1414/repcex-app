@@ -9,22 +9,33 @@
                 <span class="title-info open-sans-bold">Nombre</span><br>
                 <b>Juan Villa</b>
             </div>
-         <div>
-             <span class="title-info open-sans-bold">Teléfono</span> <br>    
-             <b>+57548854126</b>
-         </div>
-         <div>
-             <span class="title-info open-sans-bold">Correo Electrónico</span> <br>
-             <b>juan_villa@gmail.com</b>
-         </div>
-         <div>
-             <span class="title-info open-sans-bold">Ciudad</span> <br>
-             <b>Medellín</b>
-         </div>
-         <div>
-             <span class="title-info open-sans-bold">Total de compras</span> <br>
-             <b>$200.000</b>
-         </div>
+            <div>
+                <span class="title-info open-sans-bold">Teléfono</span> <br>
+                <b>+57548854126</b>
+            </div>
+            <div>
+                <span class="title-info open-sans-bold">Correo Electrónico</span> <br>
+                <b>juan_villa@gmail.com</b>
+            </div>
+            <div>
+                <span class="title-info open-sans-bold">Ciudad</span> <br>
+                <b>Medellín</b>
+            </div>
+            <div>
+                <span class="title-info open-sans-bold">Total de compras</span> <br>
+                <b>$200.000</b>
+            </div>
         </div>
     </div>
+    <!-- TOTAL BUY-->
+    <p class="h1 open-sans-e-bold">Total de Compras</p>
+    <!-- FILTERS TABLE -->
+    <app-filters-table [btn_download]="true"></app-filters-table>
+    <!-- TABLE -->
+    <app-table-home></app-table-home>
+    <br>
+    <p class="h1 open-sans-e-bold">Total de Ventas</p>
+    <br>
+    <app-filters-table [btn_download]="true"></app-filters-table>
+    <app-table-home></app-table-home>
 </div>

@@ -1,7 +1,7 @@
 <div class="container-my-orders">
     <!-- CURRENT PAGE TAG -->
     <app-current-page-tag text="Pedidos de Clientes"></app-current-page-tag>
-    <app-filters-table></app-filters-table>
+    <app-filters-table [show_filter_users]="false"></app-filters-table>
     <!-- TABLE -->
-    <app-table-home></app-table-home>
+    <app-table-requests-online action_link_1="pedido" status_column="1"></app-table-requests-online>
 </div>

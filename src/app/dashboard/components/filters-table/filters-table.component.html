@@ -1,7 +1,7 @@
 <div class="filter-table d-flex j-content-sb">
     <div class="per-page">
         <label for="" class="label-my-orders">Entradas</label>
-        <mat-form-field appearance="outline" class="per-page-filter">
+        <mat-form-field appearance="outline" class="per-page-filter mat-form-filters">
             <mat-select value="option1">
               <mat-option value="option1">1</mat-option>
               <mat-option value="option3">2</mat-option>
@@ -9,16 +9,16 @@
             </mat-select>
           </mat-form-field>
     </div>
-    <div class="search-my-orders d-flex">
+    <div class="search-my-orders d-flex a-items-fe">
         <div class="search-input">
-            <mat-form-field appearance="outline">
+            <mat-form-field appearance="outline" class="mat-form-filters">
                 <mat-label>Buscar</mat-label>
                 <input matInput>
                 <mat-icon matSuffix>search</mat-icon>
             </mat-form-field>
         </div>
         <div class="filters-admin" *ngIf='show_filter_users'>
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline" class="mat-form-filters">
   <mat-label>Filtrar por usuarios</mat-label>
   <mat-select >
     <mat-option value="option1">Todos</mat-option>
@@ -26,6 +26,9 @@
     <mat-option value="option3">Distribuidores</mat-option>
   </mat-select>
 </mat-form-field>
+</div>
+<div class="btn-download-container" *ngIf='btn_download'>
+    <button mat-raised-button> <p class="open-sans-regular m-0"> <i class="fas fa-download"></i>  Descargar Excel</p></button>
 </div>
     </div>
 
