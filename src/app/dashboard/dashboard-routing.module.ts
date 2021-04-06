@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddProductContainer } from './admin/containers/add-product/add-product.container';
 import { HomeAdminContainer } from './admin/containers/home-admin/home-admin.container';
 import { OrdersClientsContainer } from './admin/containers/orders-clients/orders-clients.container';
 import { OrdersDetailsUsersContainer } from './admin/containers/orders-details-users/orders-details-users.container';
 import { OrdersDistributorsContainer } from './admin/containers/orders-distributors/orders-distributors.container';
+import { ProductsCrudContainer } from './admin/containers/products-crud/products-crud.container';
 import { InformationNewOrderContainer } from './client/containers/information-new-order/information-new-order.container';
 import { MyOrdersContainer } from './client/containers/my-orders/my-orders.container';
 import { NewOrderContainer } from './client/containers/new-order/new-order.container';
@@ -82,6 +84,18 @@ const routes: Routes = [
       {
         path:'admin/detalle-pedido',
         component:OrdersDetailsUsersContainer
+      },
+      {
+        path:'admin/agregar-producto',
+        component:AddProductContainer
+      },
+      {
+        path:'admin/editar-producto',
+        component:EditProductContainer
+      },
+      {
+        path:'admin/productos',
+        component:ProductsCrudContainer
       },
       {
         path:'**',

@@ -27,17 +27,22 @@
         <ng-container *ngIf="user == 'admin'">   
         <div class="menu-sidenav-items">
             <div class="menu-item" routerLinkActive="menu-item-selected">
-                <i class="fas fa-box"></i> <a routerLink="/dashboard/admin/inicio">Inicio</a>
+                <i class="fas fa-home"></i> <a routerLink="/dashboard/admin/inicio">Inicio</a>
             </div>
         </div>
         <div class="menu-sidenav-items">
             <div class="menu-item" routerLinkActive="menu-item-selected">
-                <i class="fas fa-hand-holding-usd"></i> <a routerLink="/dashboard/admin/pedidos-distribuidores">Pedidos de Distribuidores</a>
+                <i class="fas fa-people-carry"></i> <a routerLink="/dashboard/admin/pedidos-distribuidores">Pedidos de Distribuidores</a>
             </div>
         </div>
         <div class="menu-sidenav-items">
             <div class="menu-item" routerLinkActive="menu-item-selected">
-                <i class="fas fa-shopping-basket"></i> <a routerLink="/dashboard/admin/pedidos-clientes">Pedidos de Clientes</a>
+                <i class="fas fa-user-friends"></i> <a routerLink="/dashboard/admin/pedidos-clientes">Pedidos de Clientes</a>
+            </div>
+        </div>
+        <div class="menu-sidenav-items">
+            <div class="menu-item" routerLinkActive="menu-item-selected">
+                <i class="fas fa-shopping-basket"></i> <a routerLink="/dashboard/admin/productos">Productos</a>
             </div>
         </div>
     </ng-container>

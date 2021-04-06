@@ -36,10 +36,13 @@ import { TableHomeComponent } from './admin/components/table-home/table-home.com
 import { OrdersDistributorsContainer } from './admin/containers/orders-distributors/orders-distributors.container';
 import { OrdersClientsContainer } from './admin/containers/orders-clients/orders-clients.container';
 import { OrdersDetailsUsersContainer } from './admin/containers/orders-details-users/orders-details-users.container';
+import { ProductsCrudContainer } from './admin/containers/products-crud/products-crud.container';
+import { AddProductContainer } from './admin/containers/add-product/add-product.container';
+import { NewProductComponent } from './admin/components/new-product/new-product.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent, InformationNewOrderContainer, FormInformationNewOrderComponent, OrderDetailsContainer, ChipsComponent, NewOrderPlanContainer, RequestsOnlineContainer, FiltersTableComponent, TableRequestsOnlineComponent, TableMyProductsComponent, MyProductsContainer, DirectSellsContainer, DirectSellsDetailsContainer, EditProductContainer, NewDirectSellContainer, HomeAdminContainer, FiltersComponent, TableHomeComponent, OrdersDistributorsContainer, OrdersClientsContainer, OrdersDetailsUsersContainer],
+  declarations: [HeaderComponent, SidenavComponent, DashboardSkeletonContainer, MyOrdersContainer, CurrentPageTagComponent, TableMyOrdersComponent, NewOrderContainer, GoBackOrdersComponent, StepperComponent, ProductsListComponent, DistributorListComponent, DirectionFormOrderComponent, InformationNewOrderContainer, FormInformationNewOrderComponent, OrderDetailsContainer, ChipsComponent, NewOrderPlanContainer, RequestsOnlineContainer, FiltersTableComponent, TableRequestsOnlineComponent, TableMyProductsComponent, MyProductsContainer, DirectSellsContainer, DirectSellsDetailsContainer, EditProductContainer, NewDirectSellContainer, HomeAdminContainer, FiltersComponent, TableHomeComponent, OrdersDistributorsContainer, OrdersClientsContainer, OrdersDetailsUsersContainer, ProductsCrudContainer, AddProductContainer, NewProductComponent, EditProductContainer],
   imports: [
     CommonModule,
     DashboardRoutingModule,
