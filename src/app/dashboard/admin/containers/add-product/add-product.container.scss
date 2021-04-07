@@ -1,0 +1,22 @@
+@import '../orders-details-users/orders-details-users.container.scss';
+// UPLOAD IMG
+.upload-img{
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border:2px dashed $blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color:$blue;
+    span{
+        font-size: 18px;
+    }
+    i{
+        font-size: 42px;
+      
+    }
+}
