@@ -176,6 +176,9 @@ margin:10px 0px;
     margin:0px 4px;
   }
 }
+.input-with-prefix{
+  margin: 6px 0px 12px 0px  !important;
+}
 .btn-slide-toggle{
   color:$chip-green;
 }
@@ -187,6 +190,19 @@ margin:10px 0px;
     background: transparent !important;
     margin:0px 5px !important;
 }
+// MAT PREFIX
+.mat-prefix{
+  padding-right: 10px;
+  margin-right: 10px;
+  height: 30px;
+  padding-top: 5px;
+  border-right: 1px solid darkgray;
+  color: grey;
+  display: flex;
+  align-items: center;
+
+}
+
 //Inputs
 .input-order-repcex{
   padding: 6px;

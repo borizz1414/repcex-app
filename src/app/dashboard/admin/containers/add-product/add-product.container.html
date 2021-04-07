@@ -8,15 +8,16 @@
                 <div class="upload-img">
                     <i class="fas fa-plus"></i>
                     <br>
-                   <span class="open-sans-light">Subir imagen</span> 
+                    <span class="open-sans-light">Subir imagen</span>
                 </div>
                 <br>
-                <div class="form">
-                    <mat-form-field class="mat-form-field-order" appearance="outline">
+
+                <div class="d-flex j-content-sb">
+                    <mat-form-field class="form-field-new-product" appearance="outline">
                         <mat-label>Nombre del producto</mat-label>
                         <input matInput>
                     </mat-form-field>
-                    <mat-form-field appearance="outline" class="form-field-flex">
+                    <mat-form-field appearance="outline" class="form-field-new-product form-field-flex">
                         <mat-label>Presentación</mat-label>
                         <input matInput>
                         <div class="input-suffix">
@@ -24,11 +25,93 @@
                         </div>
                     </mat-form-field>
                 </div>
+                <p class="h1 open-sans-e-bold">Planes</p>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="d-flex ">
+                            <mat-form-field appearance="outline" class="form-field-new-product form-field-flex">
+                                <mat-label>Precio</mat-label>
+                                <div class="mat-prefix" matPrefix>
+                                    COP
+                                </div>
+                                <input matInput class="input-with-prefix">
+
+                            </mat-form-field>
+                            &nbsp;
+                            <mat-form-field appearance="outline" class="form-field-new-product form-field-flex">
+                                <input matInput type="number" class="input-with-prefix">
+                                <div class="input-suffix">
+                                    <span matSuffix>Unidades</span>
+                                </div>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="d-flex j-content-fe">
+                            <mat-form-field appearance="outline" class="form-field-new-product form-field-flex">
+                                <mat-label>Precio</mat-label>
+                                <div class="mat-prefix" matPrefix>
+                                    COP
+                                </div>
+                                <input matInput class="input-with-prefix">
+
+                            </mat-form-field>
+                            &nbsp;
+                            <mat-form-field appearance="outline" class="form-field-new-product form-field-flex">
+                                <input matInput type="number" class="input-with-prefix">
+                                <div class="input-suffix">
+                                    <span matSuffix>Unidades</span>
+                                </div>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="d-flex ">
+                            <mat-form-field appearance="outline" class="form-field-new-product form-field-flex">
+                                <mat-label>Precio</mat-label>
+                                <div class="mat-prefix" matPrefix>
+                                    COP
+                                </div>
+                                <input matInput class="input-with-prefix">
+
+                            </mat-form-field>
+                            &nbsp;
+                            <mat-form-field appearance="outline" class="form-field-new-product form-field-flex">
+                                <input matInput type="number" class="input-with-prefix">
+                                <div class="input-suffix">
+                                    <span matSuffix>Unidades</span>
+                                </div>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 d-flex j-content-center">
+                        <div class="upload-img upload-footer">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-save">
+                <button mat-raised-button color="primary" class="w-20"> Guardar </button>
             </div>
         </div>
         <div class="col-xs-3">
-            wdwd
+            <div class="card p-card">
+                <p class="open-sans-bold product-status-text">Disponibilidad del producto</p>
+                <mat-slide-toggle color="primary" class="btn-slide-toggle"> <b>Activado</b></mat-slide-toggle>
+            </div>
+            <div class="card p-card">
+                <p class="open-sans-bold product-status-text">Inventario total del producto</p>
+                <mat-form-field appearance="outline" class=" form-field-flex">
+                    <input matInput type="number" class="input-with-prefix">
+                    <div class="input-suffix">
+                        <span matSuffix>Unidades</span>
+                    </div>
+                </mat-form-field>
+            </div>
         </div>
     </div>
-  
+
 </div>
