@@ -4,37 +4,38 @@
             <h1>Accede a tu cuenta en <b>REPCEX!</b></h1>
         </div>
         <div class="form-order-card">
-            <form  [formGroup]="formRegister" (ngSubmit)="register()">
+            <form [formGroup]="formRegister" (ngSubmit)="register()">
                 <div class="order-input">
                     <mat-form-field appearance="outline">
                         <mat-label>Nombre</mat-label>
                         <input matInput placeholder="Nombre" formControlName="name" type="text" required>
                         <mat-error *ngIf="formRegister.get('name').status">Nombre es requerido</mat-error>
-                      </mat-form-field>
+                    </mat-form-field>
                 </div>
                 <div class="order-input">
                     <mat-form-field appearance="outline">
                         <mat-label>Email</mat-label>
                         <input matInput placeholder="Email" formControlName="email" type="email" required>
                         <mat-error *ngIf="formRegister.get('email').status">Ingresa un email valido</mat-error>
-                      </mat-form-field>
+                    </mat-form-field>
                 </div>
                 <div class="order-input">
                     <mat-form-field appearance="outline">
                         <mat-label>Contraseña</mat-label>
-                        <input matInput placeholder="Contraseña" formControlName="password"type="password" required>
-                        <mat-error *ngIf="formRegister.get('password').status">Password es requerido</mat-error>
-                      </mat-form-field>
+                        <input matInput placeholder="Contraseña" formControlName="password" type="password" required>
+                        <mat-error *ngIf="formRegister.get('password').status">Contraseña es requerido</mat-error>
+                    </mat-form-field>
                 </div>
                 <div class="btn-order">
-                    <button mat-raised-button color="accent" class="btn-red-repcex btn-make-order" [disabled]="!formRegister.valid">REGISTRATE</button>
+                    <button mat-raised-button color="accent" class="btn-red-repcex btn-make-order"
+                        [disabled]="!formRegister.valid">REGISTRATE</button>
                 </div>
                 <div class="checkbox-login">
                     <input type="checkbox"> <span>No cerrar sesión</span>
                 </div>
             </form>
             <div class="text-a-center text-register">
-                Si ya tienes una cuenta  <span><a routerLink="/auth/ingresar">Ingresa</a></span>
+                Si ya tienes una cuenta <span><a routerLink="/auth/ingresar">Ingresa</a></span>
             </div>
             <div class="footer-card-login">
                 <div class="o-text d-flex j-content-center">
