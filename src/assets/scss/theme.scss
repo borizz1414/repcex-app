@@ -210,6 +210,10 @@ margin:10px 0px;
   border-radius: 10px;
   border: 1px solid #D9D9D9;
 }
+// MAT ERROR
+mat-error{
+  color:rgb(236, 58, 58) !important;
+}
 input:focus{
 outline: none;
 }

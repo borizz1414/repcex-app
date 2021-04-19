@@ -14,6 +14,7 @@ import { CardRegisterComponent } from './components/card-register/card-register.
 import { CardRecoveryPasswordComponent } from './components/card-recovery-password/card-recovery-password.component';
 import { AdminLoginContainer } from './containers/admin-login/admin-login.container';
 import { CardAdminLoginComponent } from './components/card-admin-login/card-admin-login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -24,6 +25,7 @@ import { CardAdminLoginComponent } from './components/card-admin-login/card-admi
     CommonModule,
     AuthRoutingModule,
     OrderModule,
+    ReactiveFormsModule,
     MaterialModule
   ]
 })

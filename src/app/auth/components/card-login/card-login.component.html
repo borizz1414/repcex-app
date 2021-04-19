@@ -4,21 +4,27 @@
             <h1>Accede a tu cuenta en <b>REPCEX!</b></h1>
         </div>
         <div class="form-order-card">
-            <form action="">
+            <form [formGroup]="formLogin" (ngSubmit)="login()">
                 <div class="order-input">
-                    <label for="">Email</label><br>
-                    <input type="text" class="input-order-repcex">
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="Email" formControlName="email" type="text" required>
+                        <mat-error *ngIf="formLogin.get('email').status">Email es requerido / no valido</mat-error>
+                      </mat-form-field>
                 </div>
                 <div class="order-input">
-                    <label for="">Contraseña</label><br>
-                    <input type="text" class="input-order-repcex">
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput placeholder="Contraseña" formControlName="password" type="password" required>
+                        <mat-error *ngIf="formLogin.get('password').status">Password es requerido</mat-error>
+                      </mat-form-field>
 
                 </div>
                 <div class="forgot-password">
                     <a routerLink="/auth/recuperar-contraseña"><p>¿Olvidaste tu contraseña?</p></a>
                 </div>
                 <div class="btn-order">
-                    <button mat-raised-button color="accent" class="btn-red-repcex btn-make-order">INGRESAR</button>
+                    <button mat-raised-button color="accent" class="btn-red-repcex btn-make-order" [disabled]="!formLogin.valid">INGRESAR</button>
                 </div>
                 <div class="checkbox-login">
                     <input type="checkbox"> <span>No cerrar sesión</span>
