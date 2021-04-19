@@ -30,8 +30,24 @@ export class AuthService {
         map((resp:any)=>resp)
       )
     }
+    changePassword(body):Observable<any>{
+      return this.http.put<any>(`${environment.api_url}change-password`,body)
+      .pipe(
+        catchError(this.handleError),
+        map((resp:any)=>resp)
+      )
+    }
     private handleError(error : HttpErrorResponse){
       console.log(error)
       return throwError('Ha ocurrido un error')
+    }
+    getToken(){
+
+    }
+    setToken(token){
+
+    }
+    getUserLocal(){
+
     }
 }
