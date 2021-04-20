@@ -26,6 +26,11 @@
                 <div class="btn-order">
                     <button mat-raised-button color="accent" class="btn-red-repcex btn-make-order" [disabled]="!formLogin.valid">INGRESAR</button>
                 </div>
+                <br>
+                <!-- SPINNER -->
+                <div class="d-flex j-content-center"> <mat-spinner *ngIf="spinner"></mat-spinner></div>
+
+               
                 <div class="checkbox-login">
                     <input type="checkbox"> <span>No cerrar sesión</span>
                 </div>

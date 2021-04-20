@@ -10,24 +10,34 @@ import { environment } from '@env/environment';
 })
 export class AuthService {
 
-  constructor(public http: HttpClient,
-    public router: Router,) { }
+  constructor(private http: HttpClient,
+    private router: Router) { }
     headers : HttpHeaders = new HttpHeaders({
       'Content-Type': 'application/json'
     })
 
     registerUser(body):Observable<any>{
+      console.log(body)
       return this.http.post<any>(`${environment.api_url}users`,body)
       .pipe(
         catchError(this.handleError),
-        map((resp:any)=>resp)
+        map((resp:any)=>  this.router.navigate(['/auth/ingresar']))
       )
     }
     login(body):Observable<any>{
       return this.http.post<any>(`${environment.api_url}login`,body)
       .pipe(
         catchError(this.handleError),
-        map((resp:any)=>resp)
+        map((resp:any)=> {
+            const response = {
+              message:resp.message
+            }
+            console.log(response)
+
+            return resp.access_token == undefined ?  response : ( this.router.navigate(['/dashboard']),
+                                                                     this.setToken(resp.access_token),response)
+        
+          })
       )
     }
     changePassword(body):Observable<any>{
@@ -45,9 +55,29 @@ export class AuthService {
 
     }
     setToken(token){
-
+      localStorage.setItem('token',token)
+      
     }
     getUserLocal(){
 
     }
+    setUser(name){
+
+    }
+    setRoleUser(role){
+
+    }
+    getRoleUser(){
+      
+    }
+    AuthNavigate(route) {
+       if (localStorage.getItem('token') !== null) this.router.navigate(['/'+route])
+
+    }
+    logout(){
+      localStorage.clear()
+      this.router.navigate(['/auth/ingresar'])
+    }
+    
+
 }

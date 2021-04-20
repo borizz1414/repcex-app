@@ -18,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 
 
+
 @NgModule({
   declarations: [LoginContainer,RegisterContainer, BannerLoginComponent, CardLoginComponent, RecoveryPasswordContainer, CardRegisterComponent, CardRecoveryPasswordComponent, AdminLoginContainer, CardAdminLoginComponent],
   exports:[BannerLoginComponent],
@@ -26,7 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AuthRoutingModule,
     OrderModule,
     ReactiveFormsModule,
-    MaterialModule
+    MaterialModule,
+  
   ]
 })
 export class AuthModule { }

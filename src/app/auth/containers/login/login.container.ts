@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-container',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginContainer implements OnInit {
 
-  constructor() { }
+  constructor(private _router : Router) { }
 
   ngOnInit(): void {
+    this.validateAuth()
   }
-
+  validateAuth(){
+    if(localStorage.getItem('token') !== null) this._router.navigate(['/dashboard'])
+  }
 }

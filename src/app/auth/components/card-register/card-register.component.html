@@ -30,6 +30,9 @@
                     <button mat-raised-button color="accent" class="btn-red-repcex btn-make-order"
                         [disabled]="!formRegister.valid">REGISTRATE</button>
                 </div>
+                <br>
+                   <!-- SPINNER -->
+                   <div class="d-flex j-content-center"> <mat-spinner *ngIf="spinner"></mat-spinner></div>
                 <div class="checkbox-login">
                     <input type="checkbox"> <span>No cerrar sesión</span>
                 </div>
@@ -44,7 +47,7 @@
                     </div>
                 </div>
                 <div class="social-networks-login">
-                    <div class="item-social-networks d-flex a-items-center">
+                    <div class="item-social-networks d-flex a-items-center" (click)="onLoginFacebook()">
                         <img src="assets/img/svg/icon-fb.svg" alt="">
                         <p>Registrate con Facebook</p>
                     </div>

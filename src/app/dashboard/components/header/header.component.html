@@ -14,9 +14,13 @@
                     <span>Minorista</span>
 
                 </div>
-                <div class="photo">
+                <div [matMenuTriggerFor]="menu" class="photo">
                     <img src="assets/img/profile.png" alt="">
                 </div>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Mi perfil</button>
+                    <button mat-menu-item (click)="logout()">Cerrar sesión</button>
+                  </mat-menu>
             </div>
         </div>
     </div>

@@ -15,11 +15,12 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSelectModule} from '@angular/material/select';
 import {MatMenuModule} from '@angular/material/menu';
-
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
+    MatProgressSpinnerModule,
     MatButtonModule,
     MatStepperModule,
     MatExpansionModule,
@@ -39,6 +40,7 @@ import {MatMenuModule} from '@angular/material/menu';
   ],exports:[
     MatButtonModule,
     MatStepperModule,
+    MatProgressSpinnerModule,
     MatExpansionModule,
     MatDividerModule,
     MatCheckboxModule,

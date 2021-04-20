@@ -6,6 +6,7 @@ a{
 .card-order{
     width: 100%;
     max-height: max-content !important;
+    transition: 3s;
 
 }
 .container-card-order{
@@ -71,6 +72,7 @@ a{
     flex-direction: column;
     align-items: center;
         .item-social-networks{
+            cursor: pointer;
             padding: 10px;
             min-width: 240px;
             margin:8px 0px;

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../../../core/services/auth.service';
 import Swal from 'sweetalert2'
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-card-login',
   templateUrl: './card-login.component.html',
@@ -9,10 +10,13 @@ import Swal from 'sweetalert2'
 })
 export class CardLoginComponent implements OnInit {
   formLogin: FormGroup
+  spinner:boolean = false;
   constructor(private _fb :FormBuilder,
-      private _auth : AuthService) { }
+      private _auth : AuthService,
+ ) { }
 
   ngOnInit(): void {
+
     this.buildForm();
   }
   private buildForm(){
@@ -23,11 +27,12 @@ export class CardLoginComponent implements OnInit {
     })
   }
   login(){
+    this.spinner = true;
     console.log(this.formLogin.value)
     this._auth.login(this.formLogin.value).subscribe(
       resp =>{
-        console.log(resp)
-        Swal.fire('¡Enhorabuena!', 'Te haz registrado con exito', 'success')
+        this.spinner = false;
+        resp.message !== undefined ? Swal.fire('Ups...', 'Datos invalidos', 'error') : Swal.fire('¡Bien!', 'Te haz identificado con exito', 'success')
       },
       error =>{
         console.log(error)
@@ -36,4 +41,5 @@ export class CardLoginComponent implements OnInit {
 
     )
   }
+
 }
