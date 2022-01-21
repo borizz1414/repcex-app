@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../../../core/services/auth.service';
 import Swal from 'sweetalert2'
+import { FacebookLoginProvider, SocialAuthService, GoogleLoginProvider, SocialUser } from 'angularx-social-login';
 
 @Component({
   selector: 'app-card-register',
@@ -11,11 +12,19 @@ import Swal from 'sweetalert2'
 export class CardRegisterComponent implements OnInit {
   formRegister: FormGroup
   spinner:boolean = false;
+  user: SocialUser;
+  loggedIn: boolean;
   constructor(private _fb : FormBuilder,
-            private _auth : AuthService,
+    private authService: SocialAuthService,
+    private _auth : AuthService,
             ) { }
 
   ngOnInit(): void {
+    this.authService.authState.subscribe((user) => {
+      this.user = user;
+      console.log(this.user)
+      this.loggedIn = (user != null);
+    });
     this.buildForm()
   }
  private buildForm(){
@@ -44,7 +53,12 @@ export class CardRegisterComponent implements OnInit {
   }
   onLoginFacebook(){
   
-    // this.afAuth.signInWithPopup(FacebookAuthProvider())
+    this.authService.signIn(FacebookLoginProvider.PROVIDER_ID);
+  }
+
+  onLoginGoogle(){
+  
+    this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
   }
 }
 

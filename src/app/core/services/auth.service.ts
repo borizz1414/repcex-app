@@ -29,10 +29,11 @@ export class AuthService {
       .pipe(
         catchError(this.handleError),
         map((resp:any)=> {
+            let roles = resp.user.roles;
             const response = {
               message:resp.message
             }
-            console.log(response)
+            roles.find(element => this.setRole(element.id))
 
             return resp.access_token == undefined ?  response : ( this.router.navigate(['/dashboard']),
                                                                      this.setToken(resp.access_token),response)
@@ -58,7 +59,14 @@ export class AuthService {
       localStorage.setItem('token',token)
       
     }
-    getUserLocal(){
+    setRole(role){
+      localStorage.setItem('role',role)
+      
+    }
+    getRole(){
+      return localStorage.getItem('role');
+    }
+    getUser(){
 
     }
     setUser(name){
