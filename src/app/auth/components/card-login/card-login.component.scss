@@ -1,8 +1,5 @@
 @import '../../../order/components/card-order/card-order.component.scss';
-@import '~src/assets/scss/vars.scss';
-a{
-    text-decoration: none;
-}
+@import 'src/assets/scss/vars.scss';
 .card-order{
     width: 100%;
     max-height: max-content !important;
