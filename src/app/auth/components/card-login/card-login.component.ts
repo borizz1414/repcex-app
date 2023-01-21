@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../../../core/services/auth.service';
-import Swal from 'sweetalert2'
-import { Router } from '@angular/router';
+declare var Swal: any;
 @Component({
   selector: 'app-card-login',
   templateUrl: './card-login.component.html',

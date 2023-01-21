@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../../../core/services/auth.service';
-import Swal from 'sweetalert2'
 import { FacebookLoginProvider, SocialAuthService, GoogleLoginProvider, SocialUser } from 'angularx-social-login';
-
+declare var Swal: any;
 @Component({
   selector: 'app-card-register',
   templateUrl: './card-register.component.html',

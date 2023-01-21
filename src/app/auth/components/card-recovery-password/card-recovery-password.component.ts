@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Form, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../../../core/services/auth.service';
-import Swal from 'sweetalert2'
+declare var Swal: any;
 @Component({
   selector: 'app-card-recovery-password',
   templateUrl: './card-recovery-password.component.html',
